@@ -1,0 +1,246 @@
+.light_line {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: $gray-lighter;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.coloured_bg--how_to {
+    background-color: #EFEBE5;
+    height: 400px;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 140px;
+    .image-spaces {
+        margin: 50px 0;
+    }
+}
+
+.how_to_container {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 84px;
+    img {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        &.img--right {
+            margin-right: -80px;
+        }
+    }
+    .how_to_container__items {
+        max-width: 515px;
+        position: absolute;
+        min-height: 225px;
+        margin-bottom: 96px;
+        &.to--right {
+            bottom: -150px;
+            right: 0;
+            .how_to_container--text {
+                padding: 50px 0 50px 100px;
+            }
+        }
+        &.to--left {
+            bottom: -150px;
+            left: 0;
+            .how_to_container--text {
+                padding: 50px 100px 50px 0;
+            }
+        }
+    }
+    .how_to_container--text {
+        background-color: $white;
+        z-index: 1;
+        position: relative;
+        h2 {
+            @include Montserrat-Bold(45px, normal, $gray-dark);
+            position: relative;
+            z-index: 0;
+            &:before {
+                display: none;
+            }
+            &:after {
+                content: '';
+                display: inline-block;
+                background-color: $gray-lighter;
+                height: 10px;
+                width: 40%;
+                left: -12px;
+                position: absolute;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+        h3 {
+            @include Montserrat-Bold(25px, normal, $blue-light);
+            margin-top: 24px;
+            margin-right: 10px;
+            &:after {
+                content: '';
+                display: inline-block;
+                background-color: $blue-light;
+                margin-left: 10px;
+                width: 20px;
+                height: 1px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .how_to_container--text--under {
+        display: inline-block;
+        z-index: 0;
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        width: 100px;
+        height: 100%;
+    }
+    .how_to_container--text--under_to--left {
+        display: inline-block;
+        z-index: 1;
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        width: 100px;
+        height: 100%;
+    }
+}
+
+
+/* how to detail ********************* */
+
+.how_to-detail {
+    position: absolute;
+    top: calc(65% - 48px);
+    h2 {
+        @include Montserrat-Bold(30px, normal, $blue-light);
+    }
+}
+
+.download_lines {
+    margin-bottom: 25px;
+    h3 {
+        @include Montserrat-Bold(15px, normal, $gray-dark);
+        margin-bottom: 12px;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .btn {
+        margin-bottom: 30px;
+    }
+}
+
+.doubts {
+    background-color: $gray-lighter;
+    display: inline-block;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    h4 {
+        @include Montserrat-Bold(45px, normal, $gray-dark);
+        position: relative;
+        margin-bottom: 20px;
+        z-index: 1;
+        &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: 18px;
+            left: 40%;
+            width: 20%;
+            background-color: $white;
+            z-index: -1;
+            bottom: 5px;
+        }
+    }
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+
+/* start mobile breakpoints ************************************** */
+
+@include max-xs {
+    .how_to_container {
+        margin-top:0;
+        z-index: 10;
+        .img--right {
+            margin-right: 0 !important;
+        }
+        .img--left {
+            margin-left: 0 !important;
+        }
+        .how_to_container--text {
+            padding: 0;
+            margin-top: 50px; // background-color: transparent;
+            h2 {
+                font-size: 27px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .how_to_container .how_to_container__items.to--left {
+        top: 0;
+    }
+    .how_to_container .how_to_container__items.to--right {
+        top: 0;
+    }
+    .how_to_container .how_to_container__items.to--left .how_to_container--text {
+        padding: 10px 25px 10px 0;
+    }
+    .how_to_container .how_to_container__items.to--right .how_to_container--text {
+        padding: 10px 0 10px 25px;
+    }
+    /*  how to detail*/
+    .how_to-detail {
+        top: 125px;
+        position: none;
+        left: 0;       
+    }
+    .product_approach_inst {
+        background-color: none;
+        box-shadow: none;
+        left: 0;
+        .product_approach_inst--info {
+            left: 0;
+            background-color: none;
+            box-shadow: none;
+            padding: 0;
+            h1{
+                font-size:32px;margin-top:0;
+                margin-left:0;
+                left:0 !important;
+                &:after{
+                    height: 10px;
+                    bottom:0;
+                }
+            }
+            h2{
+                font-size: 20px;
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+    .product_approach_inst .product_approach_inst--info h1::after{
+        margin-left:0;
+        margin-top:0;
+    }
+
+    .coloured_bg--how_to{
+        height: 300px;
+        margin-bottom:0;
+    }
+
+    .doubts{
+        margin: 0 0 30px 10px;
+    }
+}

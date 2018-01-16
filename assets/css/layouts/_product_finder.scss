@@ -1,0 +1,140 @@
+.--result-page {
+    .product_list::before {
+        display: none;
+    }
+    .items-inline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        p {
+            @include Merriweather-Regular(18px, normal, $gray);
+        }
+        .line::before {
+            content: '';
+            display: inline-block;
+            background-color: $gray-lighter;
+            height: 1px;
+            width: 100%;
+            top: 25px;
+            position: relative;
+        }
+    }
+}
+
+.popup-filter {
+    opacity: 0;
+    visibility: hidden;
+    @include position(absolute, 50% auto auto 50%);
+    @include transform(translate(-50%, -50%));
+    z-index: 9999;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 2px;
+            background-color: $brown;
+            transform: rotate(45deg);
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 2px;
+            background-color: $brown;
+            transform: rotate(-45deg);
+        }
+    }
+    .--swiper {
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.48);
+    }
+}
+
+.--swiper {
+    width: 100%;
+    text-align: center;
+}
+
+.--swiper .swiper-slide {
+    position: relative;
+}
+
+.--swiper .swiper-pagination-progressbar {
+    width: 232px;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+.--swiper .form_line--selection {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.--swiper .selection__item {
+    margin: 20px 22.5px;
+}
+
+.--swiper .form_line .form_line--selection::before {
+    display: none
+}
+
+.--swiper .swiper-slide__form {
+    margin-top: 75px;
+    strong {
+        @include Montserrat-Bold(30px, normal, $gray);
+    }
+}
+
+.--swiper .swiper-slide__num {
+    @include Montserrat-Light(120px, normal, $white);
+    @include font-extraLight();
+    @include position(absolute, 0 auto auto 50%);
+    @include transform(translateX(-50%));
+    z-index: -1;
+}
+
+/* for mobile breakpoints *********************************************************** */
+@include max-xs{
+    .product_finder--container{
+        margin:0;
+    }
+    .--swiper{
+        .swiper-slide__form strong{
+            @include Montserrat-Bold(25px, normal, $gray);
+        }
+
+        .swiper-slide__num{
+            font-size: 50px;
+        }
+        .form_line--selection{
+            justify-content: none;
+            display: inline-block;
+            .selection__item{
+                width:100%;
+                float:left;
+                margin-left:0;
+            }
+        }
+
+    }
+}

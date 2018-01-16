@@ -1,0 +1,316 @@
+.range_container {
+    position: relative;
+    margin-bottom: 84px;
+    img {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        &.img--right {
+            margin-right: -80px;
+        }
+    }
+    .range_container__items {
+        max-width: 515px;
+        position: absolute;
+        min-height: 225px;
+        &.to--right {
+            bottom: -12px;
+            right: -415px;
+            .range_container--text {
+                padding: 50px 0 50px 100px;
+            }
+        }
+        &.to--left {
+            bottom: 0;
+            left: -415px;
+            .range_container--text {
+                padding: 50px 100px 50px 0;
+            }
+        }
+    }
+    .range_container--text {
+        background-color: $white;
+        z-index: 1;
+        position: relative;
+        h2 {
+            @include Montserrat-Bold(45px, normal, $gray-dark);
+            position: relative;
+            z-index: 0;
+            &:before {
+                display: none;
+            }
+            &:after {
+                content: '';
+                display: inline-block;
+                background-color: $gray-lighter;
+                height: 10px;
+                width: 40%;
+                left: -12px;
+                position: absolute;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+        p {
+            @include Merriweather-Regular(15px, normal, $gray);
+            margin-top: 24px;
+        }
+    }
+    .range_container--text--under {
+        display: inline-block;
+        z-index: 0;
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        width: 100px;
+        height: 100%;
+    }
+    .range_container--text--under_to--left {
+        display: inline-block;
+        z-index: 1;
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        width: 100px;
+        height: 100%;
+    }
+}
+
+.product_finder--container {
+    background-color: $gray-lighter;
+    padding: 100px 0;
+    display: inline-block;
+    margin-bottom: 96px;
+    h2 {
+        @include Montserrat-Bold(45px, normal, $gray-dark);
+        position: relative;
+        z-index: 1;
+        &:before {
+            display: none;
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            background-color: $white;
+            position: absolute;
+            left: -12px;
+            bottom: 6px;
+            height: 12px;
+            // width: 40%;
+            width: 54%;
+            z-index: -1;
+        }
+    }
+    p {
+        @include Merriweather-Regular(15px, normal, $gray);
+        margin: 20px 0;
+    }
+}
+
+
+/* start mobile breakpoints ************************************** */
+
+@include max-xs {
+    .range_container {
+        margin-bottom: 100px;
+        .range_container__items {
+            max-width: 300px;
+            position: absolute;
+            min-height: 100px;
+            &.to--right {
+                top: 34px;
+                right: -60px;
+                // top: 60px;
+                // right: -200px;
+                .range_container--text {
+                    padding: 20px 0 20px 25px;
+                }
+            }
+            &.to--left {
+                top: 34px;
+                left: -60px;
+                // top: 60px;
+                // left: -200px;
+                // bottom: -12px;
+                .range_container--text {
+                    padding: 20px 0 20px 25px;
+                    margin-left: 30px;
+                }
+            }
+        }
+        .range_container--text {
+            h2 {
+                font-size: 27px;
+                &:after {
+                    height: 6px;
+                    left: -10px;
+                }
+            }
+            p {
+                font-size: 15px;
+                margin: 15px 0;
+            }
+        }
+        .range_container--text--under {
+            z-index: 0;
+            top: -6px;
+            left: -6px;
+            width: 235px;
+            // width: 96px;
+            height: 60%;
+            // height: 98%;
+        }
+        .range_container--text--under_to--left {
+            z-index: 1;
+            top: -6px;
+            right: -6px;
+            width: 235px;
+            // width: 96px;
+            height: 60%;
+            // height: 98%;
+        }
+    }
+    .product_finder--container {
+        padding: 60px 0;
+        margin: 0 10px 30px 10px;
+        h2 {
+            font-size: 27px;
+            &:before {
+                display: none;
+            }
+            &:after {
+                left: -12px;
+                bottom: 4px;
+                height: 8px;
+                width: 40%;
+            }
+        }
+        p {
+            @include Merriweather-Regular(15px, normal, $gray);
+            margin: 20px 0;
+        }
+    }
+}
+
+
+/* ******************************************************* other breakpoints */
+@media screen and (min-width: 546px) and (max-width: 768px){
+    .range_container .range_container__items.to--right{
+        top: 78px;
+        right:0;
+    }
+
+    .range_container .range_container--text--under{
+        width: 295px;
+        height: 98%;
+    }
+
+    .range_container .range_container__items.to--left{
+        top: 72px;
+        left:0;
+    }
+    .range_container .range_container--text--under_to--left{
+        width: 295px;
+        height:110%;
+    }
+    .range_container .range_container__items.to--left .range_container--text{
+        margin-left:0;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1023px){
+    .range_container .range_container__items.to--right{
+        bottom: -50px;
+        right:0;
+    }
+    .range_container .range_container--text--under{
+        width: 100%;
+        height: 84%;
+    }
+
+    .range_container .range_container__items.to--left{
+        bottom: -50px;
+        left:0;
+    }
+    .range_container .range_container--text--under_to--left{
+        width: 100%;
+        height: 84%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1199px){
+    .range_container .range_container__items.to--right{
+        bottom: -50px;
+    }
+    .range_container .range_container__items{
+        min-height: 200px;
+    }
+
+    .range_container .range_container--text--under{
+        height:82%;
+    }
+
+    .range_container .range_container__items.to--left{
+        bottom: -50px;
+    }
+    .range_container .range_container--text--under_to--left{
+        height: 82%;
+    }
+    .range_container .range_container__items.to--left{
+        left: -250px;
+    }
+    .range_container .range_container__items.to--right{
+        right: -250px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    
+    .range_container .range_container__items.to--right {
+        bottom: -30px;
+    }
+    .range_container .range_container--text--under {
+        height: 88%;
+        top: 0;
+    }
+    .range_container .range_container--text {
+        top: 13px;
+    }
+    .range_container .range_container__items.to--left {
+        bottom: -30px;
+    }
+    .range_container .range_container--text--under_to--left {
+        top: 0;
+        height: 88%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .range_container .range_container__items.to--right .range_container--text {
+        padding: 80px 0 80px 100px;
+    }
+    .range_container .range_container__items.to--right {
+        bottom: -12px;
+    }
+    .range_container .range_container__items {
+        min-height: 288px;
+    }
+    .range_container .range_container--text--under {
+        top: -12px;
+    }
+    .range_container .range_container__items.to--right .range_container--text {
+        min-height: 288px;
+    }
+
+    .range_container .range_container--text{
+        min-height: 288px;
+    }
+    .range_container .range_container__items.to--left{
+        bottom: -12px;
+    }
+    .range_container .range_container__items.to--left .range_container--text{
+        padding: 80px 100px 80px 0;
+    }
+}

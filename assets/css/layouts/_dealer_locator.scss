@@ -1,0 +1,312 @@
+// map
+#map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 513px;
+    width: 100%;
+}
+
+.map_search {
+    padding: 96px 80px 48px 80px;
+    position: absolute;
+    bottom: -24px;
+    left: -50px;
+    z-index: 1;
+    background-color: $gray-lighter;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    h2 {
+        @include Montserrat-Bold(14px, normal, $blue-light);
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 20px;
+            margin: 0 13px 5px 0;
+            background-color: $blue-light;
+        }
+    }
+    .map_search--form {
+        position: relative;
+        .custom-select {
+            .select2-container {
+                .select2-selection--single {
+                    .select2-selection__rendered {
+                        @include Montserrat-Medium(14px, normal, $gray);
+                        padding-left: 20px;
+                        line-height: 38px;
+                    }
+                }
+            }
+        }
+        .map_search--form--content {
+            position: relative;
+            margin-top: 24px;
+        }
+        .search {
+            padding: 13px 25px;
+            position: relative;
+            width: calc(100% - 33px);
+            margin-left: 33px;
+            border-radius: 30px;
+            border: 1px solid $gray-light;
+            @include Montserrat-Medium(14px, normal, $gray-dark);
+            color: rgba(0,0,0,1);
+        }
+        .btn--search {
+            //content:'';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 13px 25px;
+            border-radius: 30px;
+            background-color: $gray;
+            color: $white;
+            transition: all 200ms ease;
+            &:hover {
+                background-color: $brown-light;
+                transition: all 200ms ease;
+            }
+            i {
+                color: $white;
+                font-size: 14px;
+            }
+        }
+    }
+    .custom-select {
+        width: 50%;
+        margin-left: 33px;
+        margin-top: 24px;
+    }
+}
+
+// this is my customize infowindow
+.gm-style-iw {
+    // width: 350px !important;
+    top: 15px !important;
+    left: 0px !important;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6); // border: 1px solid rgba(72, 181, 233, 0.6);
+    // border-radius: 2px 2px 10px 10px;
+}
+
+#iw-container {
+    margin-bottom: 10px;
+}
+
+#iw-container .iw-title {
+    @include Montserrat-Bold(16px, normal, $gray-dark); // font-size: 22px;
+    // font-weight: 400;
+    padding: 10px;
+    padding-top: 36px;
+    padding-left: 25px; // background-color: #48b5e9;
+    color: $gray-dark;
+    margin: 0; // border-radius: 2px 2px 0 0;
+}
+
+#iw-container .iw-content {
+    p {
+        // font-size: 13px;
+        // line-height: 18px;
+        // font-weight: 400;
+        @include Montserrat-Light (13px, 11px, $gray);
+        margin-right: 1px;
+        padding: 20px 25px; // max-height: 140px;
+        // overflow-y: auto;
+        // overflow-x: hidden;
+    }
+}
+
+#iw-container .iw-contacts {
+    padding-bottom: 25px;
+    h5 {
+        @include Montserrat-Bold(13px, normal, $blue-light);
+        padding-left: 25px;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+    p {
+        // font-size: 13px;
+        // line-height: 18px;
+        // font-weight: 400;
+        @include Montserrat-Light (13px, 11px, $gray);
+        margin-right: 1px;
+        padding: 20px 25px;
+        display: inline,
+    }
+}
+
+//end infowindow
+.custom-select {
+    .select2-container {
+        width: 100% !important;
+        .select2-selection--single {
+            background: transparent;
+            height: 40px;
+            border-radius: 30px;
+            border-color: $gray-light;
+            .select2-selection__rendered {
+                padding-left: 20px;
+                line-height: 38px;
+                color: $gray-light;
+            }
+            .select2-selection__arrow {
+                height: 40px;
+                width: 30px;
+            }
+        }
+        .select2-dropdown {
+            background: transparent;
+        }
+    }
+}
+
+.select2-dropdown {
+    border-radius: 30px;
+    max-height: 170px !important;
+    overflow: hidden;
+    border-color: $gray-light;
+}
+
+.select2-container--open .select2-dropdown--above {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.select2-container--open .select2-dropdown--below {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.select2-container--default {
+    .select2-results__option {
+        padding-left: 20px;
+        border-top: 1px solid $gray-light;
+    }
+    .select2-results__option[aria-selected=true] {
+        background-color: $gray-lighter;
+    }
+    .select2-results__option--highlighted[aria-selected] {
+        background-color: $brown-light;
+    }
+}
+
+.map--listing {
+    margin: 96px 0;
+    h2 {
+        @include Montserrat-Bold(12px, normal, $blue-light);
+        text-transform: uppercase;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 2px;
+            margin: 0 13px 3px 0;
+            background-color: $blue-light;
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            margin-top: 24px;
+            height: 1px;
+            width: 100%;
+            background-color: $gray-light;
+        }
+    }
+}
+
+.map--listing--address {
+    margin-top: 48px;
+    &:after {
+        content: '';
+        display: inline-block;
+        height: 1px;
+        width: 100%;
+        background-color: $gray-light;
+    }
+    h2 {
+        @include Montserrat-Bold(12px, normal, $blue-light);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    h3 {
+        @include Montserrat-Bold(22px, normal, $gray-dark);
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+            z-index: -1;
+            height: 10px;
+            width: 55%;
+            background-color: $gray-lighter;
+        }
+    }
+    p {
+        @include Montserrat-Light(15px, 24px, $gray);
+        margin-bottom: 24px;
+    }
+}
+
+@include max-md {
+    #map {
+        display: none;
+    }
+    .map_search {
+        padding: 30px 20px;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100% !important;
+        height: 250px;
+        h2 {
+            margin-left: 0;
+            &:before {
+                margin: 0 -20px 20px 0;
+            }
+        }
+        &:before {
+            background-color: green;
+        }
+        .custom-select {
+            margin-left: 0;
+        }
+        .map_search--form {
+            .map_search--form--content {
+                width: 100%;
+            }
+            .search {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+    .map--listing {
+        margin-top: 290px;
+        h2 {
+            &:before {
+                margin: 0 -20px 20px 0;
+            }
+        }
+    }
+    .map--listing--address {
+        margin-top: 20px;
+        margin-left: -10px;
+        padding-left: 0;
+    }
+}

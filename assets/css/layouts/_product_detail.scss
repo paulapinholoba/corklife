@@ -1,0 +1,383 @@
+// .coloured_bg--product--detail {
+//     background-color: $gray-lighter;
+//     height: 200px;
+//     position: relative;
+//     z-index: 0;
+// }
+.topBanner--green {
+    position: absolute;
+    z-index: 9999;
+    display: inline-block;
+    top: 0;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
+    width: 94%;
+    right: 0;
+    height: 50px; // &::before{
+    //     content: '';
+    //     height: 50%;
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 999;
+    //     background-color: $gray-lighter;
+    // }
+    .breadcrumb {
+        margin-top: 16px;
+        margin-left: 50px;
+        @include Montserrat-Bold(14px, normal, $white);
+        a {
+            color: $white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .last_crumb:before {
+            content: '';
+            display: inline-block;
+            height: 1px;
+            width: 25px;
+            margin: 0 12px 3px 12px;
+            background-color: $white;
+        }
+    }
+    .list {
+        color: $white;
+        text-transform: uppercase;
+        margin-right: 100px;
+        margin-top: 17px;
+        @include Montserrat-Regular(12px, normal, $white);
+    }
+}
+
+.product_detail {
+    margin-bottom: 96px;
+    border-bottom: 1px solid $gray-lighter;
+    width: 100%;
+    display: inline-block;
+    h1 {
+        @include Montserrat-Bold(65px, 70px, $gray-dark);
+        margin-bottom: 20px;
+        padding-top: 200px;
+        position: relative;
+        z-index:0;
+        &:after{
+            content:'';
+            display:block;
+            position: absolute;
+            bottom: 3px;
+            left: -16px;
+            width: 67%;
+            height: 18px;
+            background-color: $gray-lighter;
+            z-index: -1;
+        }
+    }
+    h2 {
+        @include Montserrat-Regular(20px, normal, $blue-light);
+    &:before{
+        display: none;
+    }
+    }
+    ul {
+        margin: 38px 0 48px 0;
+        column-count: 2;
+        column-gap: 75px;
+    }
+    li {
+        margin-bottom: 15px;
+        display: table;
+        h3 {
+            @include Merriweather-Bold(12px, normal, $gray-dark);
+            margin-bottom: 5px;
+        }
+        p {
+            @include Montserrat-Light (15px, normal, $gray);
+            margin-right: 30px;
+            display: inline;
+        }
+    }
+    .stamp {
+        float: left;
+        width: 48px;
+        height: 48px;
+        background-color: $gray-light;
+        margin-right: 20px;
+        border-radius: 25%;
+        margin-bottom: 50px;
+    }
+}
+
+.gallery {
+    margin-top: 100px;
+    /**/
+    .owl-nav {
+        border-radius: 30px;
+        background-color: rgba(98, 94, 90, .25);
+        padding: 10px 25px;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+        position: absolute;
+        // bottom: 60px;
+        bottom: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+    .owl-dots {
+        position: absolute;
+        // bottom: 75px;
+        bottom: 105px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+/**/
+    &.owl-carousel .owl-item img {
+        display: table;
+        margin: 0 auto;
+        width: auto;
+        position: relative;
+        // top: -24px;
+        top: 40px;
+    }
+    &.owl-carousel .owl-stage-outer {
+        overflow: visible !important;
+        &::before {
+            content: '';
+            @include size(calc(100% - 48px)100%);
+            background-color: #efebe5;
+            display: inline-block;
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+
+.how_to {
+    background-color: $gray-lighter;
+    padding: 96px 0 48px 0;
+    margin-bottom: 96px;
+    display: inline-block;
+}
+
+.how_to--line {
+    vertical-align: middle;
+    margin-bottom: 48px;
+    h2 {
+        @include Montserrat-Bold(22px, normal, $gray-dark);
+        &:before {
+            display: none;
+        }
+    }
+    p {
+        @include Montserrat-Light(13px, 19px, $gray);
+    }
+    &:hover {
+        cursor: pointer;
+        h2 {
+            color: $brown-light;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -24px;
+                width: 1px;
+                height: 100% !important;
+                background-color: $brown-light;
+            }
+        }
+        a {
+            background-color: $brown-light;
+        }
+    }
+}
+
+.product_detail__slider {
+    width: 80%;
+    @include position(absolute, 0 auto auto calc(-80% / 2));
+    @include transition(left 200ms ease);
+    .owl-nav,
+    .owl-dots {
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all 200ms ease);
+    }
+    &.active {
+        left: 0;
+        .owl-nav,
+        .owl-dots {
+            opacity: 1;
+            visibility: visible;
+        }
+        .my-carousel img{
+            width: 100%;
+        }
+        .btn-open {
+            right: 0;
+            border-radius: 30px 0px 0px 30px;
+            i {
+                @include transform(translate(-50%, -50%) rotate(-180deg));
+                display: inline-block;
+            }
+        }
+    }
+    .btn-open {
+        width: 30px;
+        height: 42px;
+        background-color: $gray;
+        border-radius: 0 30px 30px 0;
+        position: absolute;
+        top: 127px;
+        right: -30px;
+        transform: translateY(-50%);
+        padding: 8px 5px;
+        @include transition(all 200ms ease);
+        z-index: 99;
+        i {
+            color: $white;
+            @include transition(all 200ms ease);
+            @include position(absolute, 50% auto auto 50%);
+            @include transform(translate(-50%, -50%));
+        }
+    }
+}
+
+
+/* mobile breakpoint ******************************************** */
+
+@include max-md {
+    .topBanner--green {
+        top: 0;
+        height: auto;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        left: 10px;
+        .breadcrumb {
+            margin-top: 0;
+            margin-left: 10px;
+        }
+        .list {
+            font-size: 0;
+            margin-right: 40px;
+            margin-top: 0px;
+            i {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+        }
+    }
+    .product_detail {
+        margin-bottom: 60px;
+
+        h1 {
+            @include Montserrat-Bold(32px, 35px, $gray-dark);
+            margin-bottom: 20px;
+            padding-top: 40px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        ul {
+            column-count: 1;
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            -ms-column-count: 1;
+            -o-column-count: 1;
+            margin-bottom: 15px;
+        }
+        .stamp {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+        }
+
+        .product_detail__slider{
+            width: 100%;
+            @include position(relative, 0 auto auto 0);
+
+            .my-carousel{
+                margin-bottom: 0;
+
+                // .owl-nav,
+                // .owl-dots {
+                //     opacity: 1;
+                //     visibility: visible;
+                // }
+
+                .owl-nav{
+                    opacity: 1;
+                    visibility: visible;
+                    left:50%;
+                    bottom: 20px;
+                }
+
+                .owl-dots{
+                    opacity:1;
+                    visibility: visible;
+                    right: 136px;
+                    bottom: 35px;
+                }
+            }
+        }
+    }
+    .gallery {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        .item img {
+            &.hor {
+                max-width: 100%;
+                height: auto !important;
+                margin-top: 30%; // margin-bottom: 48px;
+            }
+            &.ver {
+                // top: -10px;
+                // height: 200px !important; // width: auto !important;
+            height: auto;
+            }
+        }
+        &.my-carousel .owl-nav {
+            // top: 160px;
+            padding: 20px 25px;
+
+            div {
+                margin: 0 5px 0;
+                // position: relative;
+                top: -7px;
+            }
+
+        }
+        &.my-carousel .owl-dots {
+
+            display: none;
+        }
+    }
+    .how_to {
+        padding: 60px 0 30px 20px;
+        margin-bottom: 0;
+        margin-left: 10px;
+        width: 94%;
+    }
+    .how_to--line {
+        margin-bottom: 40px;
+        h2 {
+            font-size: 16px;
+            &:before {
+                display: none;
+            }
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    }
+}

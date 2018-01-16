@@ -1,0 +1,162 @@
+.info_range {
+    margin-top: 0;
+    h3 {
+        @include Montserrat-Bold(15px, 25px, $gray);
+    }
+}
+
+.detail_range {
+    margin-top: 100px;
+    width: 100%;
+    display: inline-block;
+    .detail_range--each {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-bottom: 35px;
+        h4 {
+            @include Merriweather-Regular(16px, normal, $blue);
+            margin-bottom: 10px;
+        }
+        p {
+            @include Montserrat-Light(15px, normal, $gray);
+            margin-bottom: 35px;
+        }
+        .detail_range__num {
+            position: relative;
+            @include Montserrat-Bold(20px, normal, $blue-light);
+            margin-right: 35px;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                transform: rotate(45deg);
+                background-color: $gray-lighter;
+                color: $blue;
+                margin-right: 10px;
+                @include position(absolute, -20px -30px auto auto);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.--info-range {
+    .product_finder--container {
+        width: 100%;
+        p {
+            @include Montserrat-Light(15px, 25px, $gray);
+        }
+        .horizontal_line {
+            display: inline-block;
+            height: 1px;
+            width: 100%;
+            background-color: $gray-light;
+            margin: 50px 0 40px 0;
+        }
+        h3 {
+            @include Montserrat-Bold(15px, normal, $gray-dark);
+        }
+        .technical_details {
+            margin: 0;
+        }
+    }
+    h2.no-after {
+        font-family: 'Montserrat-Bold', sans-serif;
+        font-size: 14px;
+        line-height: normal;
+        color: #649EC1;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 20px;
+            margin: 0 13px 5px 0;
+            background-color: #649EC1;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .dealer {
+        h2 {
+            margin-bottom: 0;
+            margin-left: 26px;
+            &:before {
+                width: 20px;
+                margin-right: 13px;
+                /*because of the info range page*/
+            }
+        }
+    }
+}
+
+
+/* ********************************************** mobile */
+
+@include max-xs {
+    .detail_range {
+        margin: 20px;
+        .image-float-up {
+            clear: both;
+            float: right;
+        }
+        .content-float-down {
+            clear: both;
+            float: left;
+        }
+    }
+    .product_finder--container {
+        padding: 40px 20px;
+    }
+    .--info-range h2.no-after::before {
+        margin: 0 -20px 20px 0;
+    }
+    .--info-range .product_finder--container {
+        margin-bottom: 50px;
+    }
+    .range_all {
+        &:before {
+            display: none;
+        }
+        .range--btn {
+            float: none;
+            display: block;
+            text-align: center;
+        }
+    }
+    .detail_range {
+        .content-float-down {
+            margin-top: 50px;
+        }
+    }
+    .detail_range__text {
+        float: left;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: -60px;
+    }
+    .--info-range {
+        .product_finder--container {
+            .btn {
+                float: none;
+                margin: 15px 0 25px 0;
+            }
+        }
+    }
+}
+
+
+/* *********************************************** other breakpoints */
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .coloured_bg--product {
+        margin-bottom: 90px;
+    }
+    .product_list {
+        margin: 0 0 50px 0;
+    }
+}

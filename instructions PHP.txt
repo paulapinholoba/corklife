@@ -1,0 +1,10 @@
+Para usarem ficheiros reutilizáveis php (com includes) têm de ter
+a correr um servidor local (WAMP, XAMPP, MAMP ou outro qualquer).
+
+Assim que coloquem o servidor a correr, vejam qual a porta se esta existir.
+Caso exista, têm de abrir o gulpfile.js e colocar o número da porta:
+
+	proxy: 'localhost'
+	proxy: 'localhost:8888'
+
+Depois só têm de correr o gulp na linha de comandos normalmente.

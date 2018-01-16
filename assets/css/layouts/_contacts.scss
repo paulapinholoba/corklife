@@ -1,0 +1,141 @@
+.contact {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    h2 {
+        @include Merriweather-Regular(30px, 42px, $brown-light);
+        margin-bottom: 25px;
+    }
+    h3 {
+        @include Montserrat-Bold(12px, normal, $blue-light);
+        text-transform: uppercase;
+        margin: 15px 0;
+    }
+    h4 {
+        @include Montserrat-Bold(15px, normal, $gray);
+        margin-bottom: 15px;
+    }
+    p {
+        @include Montserrat-Light(15px, 25px, $gray);
+    }
+    .contact--form {
+        h3 {
+            &:before {
+                content: '';
+                display: inline-block;
+                background-color: $blue-light;
+                width: 20px;
+                height: 1px;
+                margin-right: 15px;
+                margin-bottom: 5px;
+            }
+        }
+        form {
+            input,
+            textarea,
+            {
+                border-radius: 30px;
+                border: 1px solid $gray-light;
+                padding: 15px;
+                color: $gray;
+                width: 100%;
+                margin: 12px;
+                margin-left: 25px;
+            }
+            .btn {
+                margin-top: 25px;
+                margin-left: 25px;
+            }
+            .custom-select {
+                margin-left: 25px;
+                width: 100%;
+                .select2-container {
+                    .select2-selection--single {
+                        height: 50px;
+                        border-color: $gray-light;
+                        .select2-selection__rendered {
+                            line-height: 48px; // color: $gray-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.warnings {
+    width: 100%;
+    margin: 48px 0 24px 25px;
+    text-align: center;
+    .success {
+        padding: 24px;
+        background-color: $gray-lighter;
+        @include Montserrat-Regular(14px, normal, #82C39A);
+    }
+    .error {
+        padding: 24px;
+        background-color: $gray-lighter;
+        @include Montserrat-Regular(14px, normal, #FC5252);
+    }
+    .word-underline--warnings {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -10px;
+            bottom: 0;
+            z-index: -1;
+            height: 8px;
+            width: 100%;
+            background-color: $white;
+        }
+    }
+}
+
+@include max-xs {
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        .highlight_txt--big {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 12px;
+        }
+        .contact--form {
+            margin-top: 20px;
+            h3 {
+                &:before {
+                    margin: 0 -20px 20px 0;
+                }
+            }
+            form {
+                margin-left:0;
+                .warnings {
+                    margin: 24px 0;
+                }
+                input, textarea {
+                    margin-left: 0;
+                }
+                .custom-select {
+                    margin-left: 0;
+                }
+                .btn{
+                    margin-left:0;
+                }
+            }
+        }
+    }
+
+    .go-up{float:left;}
+    .go-down{float:right;}
+
+    .address{
+        margin-top: 40px;
+    }
+}
