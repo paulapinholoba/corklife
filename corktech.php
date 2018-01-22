@@ -171,25 +171,25 @@
 		<section>
 
 			<div class="container-fluid coloured_bg--product--institutional --corktech">
+		
 
-				<div class="container">		
-					<div class="topBanner">
-						<div class="product_approach_inst how_to-detail">
-							<div class="col-md-10 col-xs-12">
-								<div class="institutional_mobile">
-									<div class="product_approach_inst--info">
-										<h5>Corklife</h5>
-										<h1>Empresa</h1>
-										<p>Wood or Stone decorative in floating, glueless instalation</p>
-										<!-- <h2>Fold Down</h2> -->
+					<div class="container">
+						<div class="topBanner">
+							<div class="product_approach_inst how_to-detail">
+								<div class="col-md-10 col-xs-12">
+									<div class="institutional_mobile">
+										<div class="product_approach_inst--info">
+											<h5>Corklife</h5>
+											<h1>Corktech</h1>
+											<p>Concebido para desfrutar</p>
+										</div>
 									</div>
 								</div>
 							</div>
+							<img src="https://dummyimage.com/1920x662/cccccc/fff" title="https://dummyimage.com/1920x662/cccccc/fff" class="img-responsive fright">
 						</div>
-						<img src="https://dummyimage.com/1920x662/cccccc/fff" title="https://dummyimage.com/1920x662/cccccc/fff" class="img-responsive fright">
 					</div>
-		
-				</div>
+				
 			</div>
 		</section>
 		<!-- start product listing -->
@@ -199,9 +199,9 @@
 			<div class="row">
 
 				<div class="container --institutional">
+
 					<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0">
-						<div class="highlight_txt--big">Amorim Revestimentos
-						</div>
+						<div class="highlight_txt--big">Os produtos CORKLIFE são concebidos com a tecnologia Corktech que utiliza a cortiça como um elemento diferenciador.</div>
 					</div>
 					<div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi ex accusantium eos numquam minima assumenda laborum
@@ -240,7 +240,7 @@
 				<div class="col-md-12 col-xs-12">
 					<div class="row">
 						<div class="darker-container">
-							<h2>A Amorim revestimentos em números</h2>
+							<h2>TECNOLOGIA</h2>
 							<ul>
 								<li>Presença mundial em 72 países</li>
 								<li>2 unidades industriais num total de 200.000 m
@@ -259,48 +259,91 @@
 			</div>
 
 		</section>
+
+
+		<!-- start block with graphs -->
 		<section>
-			<div class="col-md-5 col-md-offset-2 col-xs-12 col-xs-offset-0">
-				<div class="--institutional">
-					<h2>O Grupo - Corticeira Amorim</h2>
-					<p class="image-spaces--txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi placeat, rem itaque quae deserunt tenetur provident doloremque
-						nam perferendis eos omnis beatae unde officiis consequuntur atque corrupti, officia quisquam asperiores.</p>
+			<div class="row">
+				<div class="container">
+					<div class="col-md-8 col-md-offset-2 col-xs-12 col-xs-offset-0">
+
+						<div class="graphs_block">
+							<h2>BENEFÍCIOS</h2>
+							<div class="row">
+								<div class="col-md-12 col-xs-12">
+									<ul>
+										<!-- menu -->
+										<li class="graphs_block--item selected">
+											<a href="#silencio" alt="Silêncio" data-toggle="tab">Silêncio</a>
+										</li>
+										<li class="graphs_block--item">
+											<a href="#isolante" alt="Isolante Térmico Natural" data-toggle="tab">Isolante Térmico Natural</a>
+										</li>
+										<li class="graphs_block--item">
+											<a href="#conforto" alt="Conforto" data-toggle="tab">Conforto</a>
+										</li>
+										<li class="graphs_block--item">
+											<a href="#resistencia" alt="Resistência ao impacto" data-toggle="tab">Resistência ao impacto</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm-12 col-xs-12">
+									<div class="row">
+
+										<div class="col-xs-12 col-md-7 graphs_block--content tab-pane active" id="silencio">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloremque! Non optio, rem voluptatibus hic
+												fugiat quasi totam est dolor, magnam modi, aut eum temporibus ipsa asperiores nihil! Tempora, commodi?</p>
+											<img src="https://dummyimage.com/600x400/cccccc/fff" alt="https://dummyimage.com/600x400/cccccc/fff" class="img-responsive">
+										</div>
+										<div class="col-xs-12 col-md-7  graphs_block--content tab-pane" id="isolante">
+											<p>Isto é o texto sobre o isolante térmico. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, doloremque!
+												Non optio, rem voluptatibus hic fugiat quasi totam est dolor, magnam modi, aut eum temporibus ipsa asperiores
+												nihil! Tempora, commodi?</p>
+											<img src="https://dummyimage.com/600x400/49b8eb/fff" alt="https://dummyimage.com/600x400/49b8eb/fff" class="img-responsive">
+										</div>
+										<div class="col-xs-12 col-md-7  graphs_block--content tab-pane" id="conforto">
+											<p>Isto é o texto do conforto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloremque! Non
+												optio, rem voluptatibus hic fugiat quasi totam est dolor, magnam modi, aut eum temporibus ipsa asperiores nihil!
+												Tempora, commodi?
+											</p>
+											<img src="https://dummyimage.com/600x400/cccccc/fff" alt="https://dummyimage.com/600x400/cccccc/fff" class="img-responsive">
+										</div>
+										<div class="col-xs-12 col-md-7  graphs_block--content tab-pane" id="resistencia">
+											<p>Isto é o texto da resistência. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloremque!
+												Non optio, rem voluptatibus hic fugiat quasi totam est dolor, magnam modi, aut eum temporibus ipsa asperiores
+												nihil! Tempora, commodi?</p>
+											<img src="https://dummyimage.com/600x400/cccccc/fff" alt="https://dummyimage.com/600x400/cccccc/fff" class="img-responsive">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0">
-				<div class="darker-container--right">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum necessitatibus iure omnis velit architecto minus
-						consectetur, porro et!</p>
-				</div>
-			</div>
+
 		</section>
-
+		<!-- end block with graphs -->
 		<div class="clearfix"></div>
-
-		<div class="row">
-			<div class="horizontal_line--inst"></div>
-		</div>
+		<div class="horizontal_line--inst"></div>
 		<!-- start gallery -->
 		<section class="hideme">
 			<div class="container">
 				<div class="row overflow">
 					<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
-						<div class="--institutional">
+						<div class="gallery owl-carousel owl-theme my-carousel my-carousel-22">
+							<div class="item">
+								<!-- horizontal -->
+								<img src="https://dummyimage.com/1016x569/cccccc/000000" class="hor" alt="https://dummyimage.com/1016x569/cccccc/000000">
+							</div>
 
-							<div class="gallery owl-carousel owl-theme my-carousel my-carousel-22">
-								<div class="item">
-									<!-- horizontal -->
-									<img src="https://dummyimage.com/1016x569/cccccc/000000" class="hor" alt="https://dummyimage.com/1016x569/cccccc/000000">
-								</div>
-
-								<div class="item">
-									<!-- vertical -->
-									<img src="https://dummyimage.com/600x640/444444/000000" class="ver" alt="https://dummyimage.com/600x640/444444/000000">
-								</div>
-
+							<div class="item">
+								<!-- vertical -->
+								<img src="https://dummyimage.com/600x640/444444/000000" class="ver" alt="https://dummyimage.com/600x640/444444/000000">
 							</div>
 
 						</div>
+
 					</div>
 				</div>
 			</div>

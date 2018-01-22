@@ -205,7 +205,7 @@
 									<p>Breve descrição, texto não final, Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 								</div>
 								<div class="col-md-3 col-md-offset-1 col-xs-12 col-xs-offset-0">
-									<a href="#" alt="Consulte Aqui" class="btn btn--gray">Consulte Aqui</a>
+									<a href="#" alt="Consulte Aqui" class="btn btn--lightGray">Consulte Aqui</a>
 								</div>
 							</div>
 						</div>
@@ -221,7 +221,7 @@
 									<p>Breve descrição, texto não final, Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 								</div>
 								<div class="col-md-3 col-md-offset-1">
-									<a href="#" alt="Consulte Aqui" class="btn btn--gray">Consulte Aqui</a>
+									<a href="#" alt="Consulte Aqui" class="btn btn--lightGray">Consulte Aqui</a>
 								</div>
 							</div>
 
@@ -237,7 +237,7 @@
 									<p>Breve descrição, texto não final, Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 								</div>
 								<div class="col-md-3 col-md-offset-1">
-									<a href="#" alt="Consulte Aqui" class="btn btn--gray">Consulte Aqui</a>
+									<a href="#" alt="Consulte Aqui" class="btn btn--lightGray">Consulte Aqui</a>
 								</div>
 							</div>
 

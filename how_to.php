@@ -43,7 +43,7 @@
 	<div class="main-content">
 		<!-- start -->
 		<section>
-			<div class="container-fluid coloured_bg--product-smaller">
+			<div class="container-fluid coloured_bg--product-smaller--howto">
 				<div class="container">
 					<div class="topBanner">
 						<h1 class="title-underline">Como Fazer</h1>
@@ -55,16 +55,19 @@
 		<!-- start introdution -->
 		<section>
 			<div class="row">
-				<div class="image-spaces">
-
-					<div class="col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
-						<div class="highlight_txt--big">Saiba como tratar os seus produtos Corklife</div>
-					</div>
-					<div class="col-md-5 col-md-offset-2 col-xs-10 col-xs-offset-1">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi ex accusantium eos numquam minima assumenda laborum
-							perferendis, ipsum, vitae recusandae odit maiores corporis. Voluptates, praesentium? Consequuntur sapiente aliquam
-							quaerat!
-						</p>
+				<div class="container --institutional">
+					<div class="image-spaces">
+						<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0">
+							<div class="highlight_txt--big">Saiba como tratar os seus produtos Corklife</div>
+						</div>
+						<div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0">
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi ex accusantium eos numquam minima assumenda laborum
+									perferendis, ipsum, vitae recusandae odit maiores corporis. Voluptates, praesentium? Consequuntur sapiente aliquam
+									quaerat!
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

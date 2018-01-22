@@ -43,30 +43,33 @@
 
 	</header>
 	<?php include 'search.php' ?>
-	<div class="main-content  --info-range">
+	<div class="main-content">
 		<!-- start top banner -->
 		<section>
 
-			<div class="container-fluid coloured_bg--product">
+			<div class="container-fluid coloured_bg--product-info-range">
 
 				<div class="container">
 
 					<div class="topBanner">
-						<div class="product_approach--title hidden-md">
+						<div class="product_approach--title hidden-md" style="background-color: #939961;">
 							Produtos
 						</div>
 						<div class="product_approach">
 							<div class="col-md-10m col-xs-12">
 								<div class="product_approach--info">
+									<!-- <div class="color_behind" style="background-color: #939961;"></div> -->
 									<h5 class="hidden-xs">Produtos</h5>
 									<h1>Freestyle</h1>
 									<p>Wood or Stone decorative in floating, glueless instalation</p>
-
+									<!-- <a href="info_range.php" alt="Saiba mais sobre esta gama" class="btn btn--blue">Saiba mais sobre esta gama</a> -->
 								</div>
+								<div class="color_behind hidden-xs" style="background-color: #939961;"></div>
 							</div>
 						</div>
 						<img src="https://dummyimage.com/1920x662/cccccc/fff" title="https://dummyimage.com/1920x662/cccccc/fff" class="img-responsive fright">
 					</div>
+
 				</div>
 			</div>
 		</section>
@@ -100,11 +103,11 @@
 				<div class="info_range">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1">
+							<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0">
 								<div class="highlight_txt--big">Entre em contacto connosco sempre que precisar.</div>
 
 							</div>
-							<div class="col-md-5 col-md-offset-1 col-xs-11 col-xs-offset-1 contact--form">
+							<div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0 contact--form">
 								<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illum laborum rem cumque libero quaerat vero, minima
 									excepturi blanditiis provident tempore nobis voluptas nostrum. Recusandae nemo distinctio veniam tempora dolorem!</h3>
 							</div>
@@ -121,7 +124,7 @@
 				<div class="detail_range">
 					<img src="assets/img/info_range.jpg" class="img-responsive fright image-float-up" title="info range">
 
-					<div class="col-md-3 col-md-offset-1 col-xs-11 col-xs-offset-0 fleft content-float-down">
+					<div class="col-md-3 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-11 col-xs-offset-0 fleft content-float-down">
 						<ul>
 							<li class="detail_range--each">
 								<div class="detail_range__num">
@@ -182,7 +185,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-xs-12">
-						<div class="product_finder--container ">
+
+						<div class="product_finder--container --info-range">
 							<div class="row">
 								<div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
 									<h2 class="no-after">Subtítulo de uma nova área de texto</h2>
@@ -201,25 +205,34 @@
 										pariatur ex totam!</p>
 									<img src="assets/img/icons.png" alt="">
 								</div>
-								<div class="col-md-10 col-md-offset-1">
-									<span class="horizontal_line"></span>
-								</div>
-								<div class="col-lg-4 col-lg-offset-2 col-xs-10 col-xs-offset-1">
-									<div class="fleft">
-										<h3>Technical Sheets</h3>
-										<p class="technical_details">PDF | 500kb</p>
-									</div>									
-									<a href="#" title="Download" class="btn btn--lightGray fright">Download</a>
-								</div>
-								<div class="col-lg-4 col-lg-offset-0 col-xs-10 col-xs-offset-1">
-									<div class="fleft">
-										<h3>Garantias</h3>
-										<p class="technical_details">PDF | 500kb</p>
-									</div>									
-									<a href="#" title="Download" class="btn btn--lightGray fright">Download</a>
+								<div class="technical_details">
+
+									<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+										<span class="horizontal_line"></span>
+									</div>
+									<div class="col-lg-4 col-lg-offset-2 col-xs-10 col-xs-offset-1">
+										<div class="col-md-8 col-xs-12">
+											<h3>Technical Sheets</h3>
+											<p>PDF | 500kb</p>
+										</div>
+										<div class="col-md-4 col-xs-12">
+
+											<a href="#" title="Download" class="btn btn--lightGray">Download</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-lg-offset-0 col-xs-10 col-xs-offset-1">
+										<div class="col-md-8 col-xs-12">
+											<h3>Garantias</h3>
+											<p>PDF | 500kb</p>
+										</div>
+										<div class="col-md-4 col-xs-12">
+											<a href="#" title="Download" class="btn btn--lightGray">Download</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -235,14 +248,21 @@
 						</div>
 						<div class="image--under"></div>
 					</div>
-					<div class="col-md-6 col-md-offset-1 col-xs-11 col-xs-offset-1">
-						<h2>subtitulo de uma nova area de texto</h2>
-						<p class="col-md-12 col-md-offset-0 col-xs-10 col-xs-offset-1">
+					<div class="container --institutional">
+						<div class="col-md-6 col-md-offset-1 col-xs-12 col-xs-offset-0">
+							<h2>subtitulo de uma nova area de texto</h2>
+							<p class="col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mattis sapien, fringilla pharetra metus. Nulla facilisi. Etiam vulputate libero lorem, eget tincidunt diam venenatis non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed gravida, massa et porttitor tincidunt, turpis est suscipit ligula, quis consequat nisl magna nec augue. Praesent vel nisi id libero porttitor porta a et nulla. Suspendisse id augue velit. Maecenas mattis elit ac ligula tincidunt pulvinar. Curabitur at fringilla odio, quis porta odio.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mattis sapien, fringilla pharetra metus. Nulla facilisi.
+								Etiam vulputate libero lorem, eget tincidunt diam venenatis non. Pellentesque habitant morbi tristique senectus et
+								netus et malesuada fames ac turpis egestas. Sed gravida, massa et porttitor tincidunt, turpis est suscipit ligula,
+								quis consequat nisl magna nec augue. Praesent vel nisi id libero porttitor porta a et nulla. Suspendisse id augue
+								velit. Maecenas mattis elit ac ligula tincidunt pulvinar. Curabitur at fringilla odio, quis porta odio. Donec cursus
+								sodales diam, vehicula sodales dolor. Praesent placerat imperdiet mi id dictum. Aliquam vel enim sapien. Quisque
+								viverra consequat urna. Pellentesque lorem dolor, suscipit vel facilisis venenatis, facilisis nec justo. Ut porta
+								dui eget tincidunt fringilla. In vitae convallis neque.</p>
 
-Donec cursus sodales diam, vehicula sodales dolor. Praesent placerat imperdiet mi id dictum. Aliquam vel enim sapien. Quisque viverra consequat urna. Pellentesque lorem dolor, suscipit vel facilisis venenatis, facilisis nec justo. Ut porta dui eget tincidunt fringilla. In vitae convallis neque.</p>
-						
+						</div>
 					</div>
 				</div>
 			</div>
@@ -251,22 +271,31 @@ Donec cursus sodales diam, vehicula sodales dolor. Praesent placerat imperdiet m
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="product_finder--container">
-							<div class="row">
-								<div class="col-lg-6 col-lg-offset-3">
-									<h2>Gama Freestyle</h2>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quo suscipit ea fuga quis odio explicabo
-										praesentium temporibus eaque repellat consequuntur blanditiis, provident quod accusamus obcaecati itaque adipisci
-										cupiditate!
-									</p>
-									<a href="#" title="" class="btn btn--gray">
-										<i class="fa fa-list" aria-hidden="true"></i>
-										&nbsp;Ver os produtos</a>
+
+
+					<div class="col-md-12 col-xs-12">
+						<div class="--info-range">
+
+							<div class="product_finder--container ">
+
+								<div class="row">
+
+
+									<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+										<h2>Gama Freestyle</h2>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi quo suscipit ea fuga quis odio explicabo
+											praesentium temporibus.
+										</p>
+										<a href="#" title="" class="btn btn--gray">
+											<i class="fa fa-list" aria-hidden="true"></i>
+											&nbsp;Ver os produtos</a>
+									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
+
 				</div>
 			</div>
 		</section>

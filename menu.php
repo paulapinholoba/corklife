@@ -1,7 +1,7 @@
 <nav>
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-md-12 col-lg-12">
         <div class="row">
-            <div class="col-xs-12 nopadding-mobile">
+            <div class="col-xs-12 col-md-12 col-lg-12 nopadding-mobile">
                 <a class="fleft logo-link" href="index.php" alt="Corklife">
                     <img src="assets/img/logo.png" alt="Corklife" class="img-responsive logo">
                 </a>

@@ -47,37 +47,49 @@
 	<div class="main-content">
 		<!-- start top banner -->
 		<section>
-			<div class="container-fluid coloured_bg--how_to">
+
+
+			<div class="container-fluid coloured_bg--product--institutional --corktech">
+
 				<div class="container">
 					<div class="topBanner">
 						<div class="product_approach_inst how_to-detail">
 							<div class="col-md-10 col-xs-12">
-								<div class="product_approach_inst--info">
-									<h5>Como Fazer</h5>
-									<h1>Flutuantes</h1>
-									<h2>Fold Down</h2>
+								<div class="institutional_mobile">
+									<div class="product_approach_inst--info">
+										<h5>Como Fazer</h5>
+										<h1>Flutuantes</h1>
+										<h2>Fold Down</h2>
+										<!-- <h2>Fold Down</h2> -->
+									</div>
 								</div>
 							</div>
 						</div>
-						<img src="https://dummyimage.com/1920x454/cccccc/fff" title="https://dummyimage.com/1920x454/cccccc/fff" class="img-responsive fright">
+						<img src="https://dummyimage.com/1920x662/cccccc/fff" title="https://dummyimage.com/1920x662/cccccc/fff" class="img-responsive fright">
 					</div>
+
 				</div>
 			</div>
+
 		</section>
 		<!-- start product listing -->
 		<!-- start introdution -->
 		<section>
 			<div class="row">
-				<div class="image-spaces">
+				<div class="container --institutional">
+					<div class="image-spaces">
 
-					<div class="col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
-						<div class="highlight_txt--big">Frase sobre este tipo de produto</div>
-					</div>
-					<div class="col-md-5 col-md-offset-2 col-xs-10 col-xs-offset-1">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi ex accusantium eos numquam minima assumenda laborum
-							perferendis, ipsum, vitae recusandae odit maiores corporis. Voluptates, praesentium? Consequuntur sapiente aliquam
-							quaerat!
-						</p>
+						<div class="col-md-3 col-md-offset-1 col-xs-12 col-xs-offset-0">
+							<div class="highlight_txt--big">Frase sobre este tipo de produto</div>
+						</div>
+						<div class="col-md-5 col-md-offset-2 col-xs-12 col-xs-offset-0">
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi ex accusantium eos numquam minima assumenda laborum
+									perferendis, ipsum, vitae recusandae odit maiores corporis. Voluptates, praesentium? Consequuntur sapiente aliquam
+									quaerat!
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -91,71 +103,122 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-2 col-md-offset-2 col-xs-10 col-xs-offset-1">
-					<h2>Instalação</h2>
-				</div>
-				<div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse dolorum nisi facilis amet, magnam rerum provident
-						voluptate autem aut voluptatem qui aliquid fuga mollitia possimus aperiam perferendis id pariatur.</p>
-				</div>
-				<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
-					<span class="light_line"></span>
-				</div>
-			</div>
-
-
-			<div class="row line_with_border">
-				<div class="col-md-2 col-md-offset-2 col-xs-10 col-xs-offset-1">
-					<h2>Instalação</h2>
-				</div>
-				<div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse dolorum nisi facilis amet, magnam rerum provident
-						voluptate autem aut voluptatem qui aliquid fuga mollitia possimus aperiam perferendis id pariatur.</p>
-				</div>
-				<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
-					<span class="light_line"></span>
-				</div>
-			</div>
-
-			<div class="row line_with_border">
-				<div class="col-md-2 col-md-offset-2 col-xs-10 col-xs-offset-1">
-					<h2>Downloads</h2>
-				</div>
-				<div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
-
-					<div class="download_lines">
-						<div class="col-md-8 col-md-offset-0 col-xs-12 col-xs-offset-0">
-
-							<h3>Nome do ficheiro 1</h3>
-							<p>perferendis id pariatur.</p>
-							<h3>Nome do ficheiro 1</h3>
-							<p>perferendis id pariatur.</p>
-						</div>
-						<div class="col-md-4 col-xs-12">
-
-							<a href="#" alt="#" class="btn btn--lightGray">Download</a>
-							<a href="#" alt="#" class="btn btn--lightGray">Download</a>
-						</div>
+				<div class="container --institutional">
+					<div class="col-md-2 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+						<h2 class="subhead2">Instalação</h2>
+					</div>
+					<div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse dolorum nisi facilis amet, magnam rerum
+							provident voluptate autem aut voluptatem qui aliquid fuga mollitia possimus aperiam perferendis id pariatur.</p>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+						<span class="light_line"></span>
 					</div>
 
 				</div>
-				<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
-					<span class="light_line"></span>
+
+
+				<div class="row line_with_border">
+					<div class="container --institutional">
+						<div class="col-md-2 col-md-offset-2 col-xs-10 col-xs-offset-1">
+							<h2 class="subhead2">Instalação</h2>
+						</div>
+						<div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse dolorum nisi facilis amet, magnam rerum
+								provident voluptate autem aut voluptatem qui aliquid fuga mollitia possimus aperiam perferendis id pariatur.</p>
+
+							<!-- start downloads -->
+							<div class="download_lines space_up">
+								<h4>DOWNLOADS</h4>
+								<div class="col-md-8 col-md-offset-0 col-xs-12 col-xs-offset-0">
+									<div class="row">
+										<h3>Nome do ficheiro 1</h3>
+										<p>perferendis id pariatur.</p>
+										<h3>Nome do ficheiro 1</h3>
+										<p>perferendis id pariatur.</p>
+									</div>
+								</div>
+
+								<div class="row">
+
+									<div class="col-md-4 col-xs-4">
+
+										<a href="#" alt="#" class="btn btn--lightGray">Download</a>
+										<a href="#" alt="#" class="btn btn--lightGray">Download</a>
+									</div>
+								</div>
+
+							</div>
+							<!-- end downloads -->
+						</div>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+						<span class="light_line"></span>
+					</div>
 				</div>
-			</div>
+
+				<div class="row line_with_border">
+					<div class="container --institutional">
+						<div class="col-md-2 col-md-offset-2 col-xs-10 col-xs-offset-1">
+							<h2 class="subhead2">Instalação</h2>
+						</div>
+						<div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse dolorum nisi facilis amet, magnam rerum
+								provident voluptate autem aut voluptatem qui aliquid fuga mollitia possimus aperiam perferendis id pariatur.</p>
+						</div>
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+							<span class="light_line"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="row line_with_border">
+					<div class="container --institutional">
+						<div class="col-md-2 col-md-offset-2 col-xs-10 col-xs-offset-1">
+							<h2 class="subhead2">Downloads</h2>
+						</div>
+						<div class="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
+
+							<div class="download_lines">
+								<h4>DOWNLOADS</h4>
+								<div class="col-md-8 col-md-offset-0 col-xs-12 col-xs-offset-0">
+									<div class="row">
+										<h3>Nome do ficheiro 1</h3>
+										<p>perferendis id pariatur.</p>
+										<h3>Nome do ficheiro 1</h3>
+										<p>perferendis id pariatur.</p>
+									</div>
+								</div>
+								<div class="row">
+
+									<div class="col-md-4 col-xs-4">
+
+										<a href="#" alt="#" class="btn btn--lightGray">Download</a>
+										<a href="#" alt="#" class="btn btn--lightGray">Download</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+							<span class="light_line"></span>
+						</div>
+					</div>
+				</div>
 		</section>
 
 		<!-- start doubts -->
 		<section class="hideme">
 
 			<div class="row">
-				<div class="container">
-					<div class="col-md-12 col-xs-11 doubts">
+				<div class="container --institutional">
+					<div class="col-md-12 col-xs-12 doubts">
 						<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
 							<!-- start one line -->
-							<h4>Saiba como instalar</h4>
+							<h4>Ainda tem dúvidas?</h4>
+							<div class="clearfix"></div>
 							<p>Breve descrição, texto não final, Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-							<a href="#" alt="Contacte-nos" class="btn btn--gray">Contacte-nos</a>
+							<a href="#" alt="Contacte-nos" class="btn btn--gray" id="moodle">Contacte-nos</a>
 							<!-- end one line -->
 						</div>
 					</div>
@@ -164,17 +227,85 @@
 
 		</section>
 
+		<!-- start moodle -->
+		<div class="mask-filter"></div>
+		<div class="container container-absolute">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-xs-12 col-xs-offset-0">
+					<div class="doubts_form product_filter top-search-filter">
+						<div class="row">
+							<a href="#" title="close" class="close"></a>
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-10 col-md-offset-1">
 
-	</div>
-	<!-- footer -->
-	<?php include 'footer.php' ?>
+										<h2>DIGA-NOS QUAL A SUA DÚVIDA</h2>
+										<div class="row">
+											<div class="col-md-12">
+												<form action="#" class="newsletter newsletter--search">
+													<div class="incomplete_field">
+														<span class="red_hairline"></span>
+														<input type="text" placeholder="* Nome" required>
+													</div>
+													<span class="error"></span>
+													<input type="text" placeholder="* Telefone" required>
+													<input type="text" placeholder="Email">
+													<div class="custom-select">
+
+														<select name="pais">
+															<option>Portugal</option>
+															<option value="Espanha">Espanha</option>
+															<option value="Austrália">Austrália</option>
+															<option value="França">França</option>
+															<option value="Itália">Itália</option>
+														</select>
+													</div>
+													<div class="custom-select">
+														<select name="Profissão">
+															<option>Designer</option>
+															<option value="Programador">Programador</option>
+															<option value="Gestor de Projeto">Gestor de Projeto</option>
+															<option value="Trolha">Trolha</option>
+															<option value="Pedreiro">Pedreiro</option>
+														</select>
+													</div>
+													<div class="custom-select">
+														<select name="Assunto">
+															<option>Esclarecimento de Dúvidas</option>
+															<option value="Preçários">Preçários</option>
+															<option value="Gamas">Gamas</option>
+
+														</select>
+													</div>
+													<textarea name="mensagem" name="" placeholder="* Mensagem" required></textarea>
+													<div class="col-md-10">
+														<a href="#" class="btn btn--gray product_filter__btn btn--doubts_form">
+
+															Enviar mensagem</a>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end moodle -->
+
+		</div>
+		<!-- footer -->
+		<?php include 'footer.php' ?>
 
 
-	<!-- inject:js -->
-	<script src="assets/vendor.min.js"></script>
-	<script src="assets/js/functions.js"></script>
-	<script src="assets/js/main.js"></script>
-	<!-- endinject -->
+		<!-- inject:js -->
+		<script src="assets/vendor.min.js"></script>
+		<script src="assets/js/functions.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- endinject -->
 </body>
 
 </html>

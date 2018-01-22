@@ -58,7 +58,8 @@
     /* this class is for the sections */
 
     .hideme {
-        opacity: 0;
+        // opacity: 0;
+        opacity: 1;
         transition: opacity 1s ease;
         &.show {
             opacity: 1;
@@ -228,12 +229,16 @@
     .submenu--item {
         padding: 10px 0;
         margin-right: 25px;
+        width: 100%;
+        float: left;
     }
 
     .submenu--link {
         color: $gray;
         z-index: 10;
         position: relative;
+        display: block;
+        float: left;
         &:before {
             content: '';
             display: block;
@@ -244,7 +249,7 @@
             left: -15px;
             bottom: 0;
             right: 10px;
-            z-index: 0;
+            z-index: -1;
             opacity: 0;
             background-color: $gray-light;
             height: 4px;
@@ -253,7 +258,7 @@
             &:before {
                 transform: translateX(0);
                 opacity: 1;
-                width: 80px;
+                width: 80%;
             }
         }
     }
@@ -264,6 +269,7 @@
 
     .menu--item:hover .submenu {
         display: block;
+        box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.49);
     }
     /* languages */
 
@@ -325,9 +331,8 @@
                 color: $gray;
                 &:hover,
                 &.active {
-                    color: $blue-light;
-                    border-top: 1px solid $gray;
-                    border-bottom: 1px solid $gray;
+                    color: $blue-light; // border-top: 1px solid $gray;
+                    // border-bottom: 1px solid $gray;
                 }
             }
         }
@@ -354,8 +359,10 @@
             right: 0;
             z-index: -1;
             opacity: 0;
+            border: none;
         }
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             color: $white;
             &:before {
                 transform: translateX(0);
@@ -401,26 +408,81 @@
     //     margin-top: 45px;
     // }
     .container_end--title {
-        text-transform: uppercase;
-        @include Montserrat-Bold (14px, normal, $white);
-        margin-bottom: 24px;
+        margin-bottom: 12px;
         display: block;
-        &:hover {
+        position: relative;
+        z-index: 1;
+        float: left;
+        clear: left; // width: 100%;
+        a {
+            text-transform: uppercase;
+            @include Montserrat-Bold (14px, normal, $white);
+            float: left; // width: 100%;
+            // clear: both;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            transform: translateX(-100%);
+            transition: all 200ms ease;
+            bottom: 0;
+            left: -5px;
+            right: 10px;
+            z-index: -1;
+            opacity: 0;
+            background-color: $gray-light;
+            height: 6px;
+            width: 90%;
+        }
+        &:hover,
+        &.selected {
             color: $brown-light;
+            &:before {
+                transform: translateX(0);
+                opacity: 1; // width: 90%;
+            }
         }
     }
 
-    .container_end li a {
-        @include Montserrat-Medium(14px, 28px, $gray-light);
-        &:hover {
+    .container_link {
+        // display: block;
+        // display: inline-block;
+        position: relative;
+        z-index: 1;
+        float: left;
+        clear: both;
+        a {
+            @include Montserrat-Medium(14px, 28px, $gray-light);
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            transform: translateX(-100%);
+            transition: all 200ms ease;
+            left: -5px;
+            bottom: 3px;
+            right: 10px;
+            z-index: -1;
+            opacity: 0;
+            background-color: $gray;
+            height: 6px;
+        }
+        &:hover,
+        &.selected {
             color: $brown-light;
+            &:before {
+                transform: translateX(0);
+                opacity: 1;
+                width: 90%;
+            }
         }
     }
 
     .why_corktech {
         img {
-            float: left;
-            // margin-right: 25px;
+            float: left; // margin-right: 25px;
         }
         .text {
             display: table;
@@ -496,7 +558,26 @@
             }
         }
         &.newsletter--search input {
-            color: $gray-dark;
+            color: $gray;
+             ::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: $gray;
+            }
+             ::-moz-placeholder {
+                /* Firefox 19+ */
+                color: $gray;
+            }
+             :-ms-input-placeholder {
+                /* IE 10+ */
+                color: $gray;
+            }
+             :-moz-placeholder {
+                /* Firefox 18- */
+                color: $gray;
+            }
+            &:focus {
+                border: 1px solid $brown;
+            }
         }
     }
 
@@ -670,8 +751,7 @@
         position: relative;
         z-index: 3;
         color: $white;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-weight: bold;
+        font-family: 'Montserrat-Bold', sans-serif;
         word-spacing: 10px;
         h1 {
             color: $white;
@@ -699,7 +779,7 @@
             display: block;
             position: absolute;
             bottom: 4px;
-            left: -10px;
+            right: -10px;
             z-index: -1;
             height: 10px;
             width: 100%;
@@ -718,7 +798,7 @@
         width: 100%;
         height: auto !important;
         img {
-            box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
             width: 100%;
         }
         .image {
@@ -728,6 +808,40 @@
             background-position: center center;
         }
     }
+
+    .esconder {
+        margin-bottom: 0 !important;
+    }
+
+    .esconder #listaLojas {
+        display: none;
+    }
+
+    .grecaptcha-badge {
+        display: none !important;
+    }
+
+    .red_hairline {
+        display: none;
+    }
+
+    .incomplete_field {
+        position: relative;
+        .red_hairline {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 24px;
+            background-color: #fc5252;
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            bottom: 0;
+            transform: translateY(50%);
+        }
+    }
+
+   
     /* ************************************************ for mobile breakpoint */
 
     .overflow {
@@ -739,24 +853,15 @@
             &:before {
                 margin: 0 -20px 20px 0;
             }
-        }
+        } // .highlight_txt--big{
+        //     font-size: 20px;
+        // }
         .container-absolute {
             top: 0;
             position: absolute;
             left: 50%; // transform: translate(-50%, -50%);
             z-index: 9999999;
             width: 100%;
-        } // .container-absolute{
-        //     top: 50px;
-        //     position: absolute;
-        //     left: 50%;
-        //     transform: translateX(-50%);
-        //     z-index: 999999;
-        // }
-        .main-content {
-            // margin-top: 0;
-            // top: -112px;
-            // position: relative;
         }
         header {
             padding-bottom: 20px;
@@ -1006,8 +1111,8 @@
             a {
                 @include Montserrat-Medium (12px, normal, $gray);
             }
-            img{
-                margin-top:0;
+            img {
+                margin-top: 0;
                 float: none;
             }
         }
@@ -1067,6 +1172,7 @@
                 &:after {
                     height: 10px;
                     top: 66%;
+                    width: 80%;
                 }
             }
         }
@@ -1083,6 +1189,11 @@
                 bottom: 0px;
                 left: -10px;
             }
+        }
+        .why_corktech .text h5,
+        .why_corktech .text p,
+        .why_corktech .text .btn {
+            margin-left: 0;
         }
     }
     /* end mobile breakpoints */

@@ -2,7 +2,7 @@
 <div class="mask-filter"></div>
 <div class="container container-absolute">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2 col-xs-12 col-xs-offset-0 topsearch_wrapper">
             <div class="product_filter top-search-filter">
                 <div class="row">
                     <a href="#" title="close" class="close"></a>
@@ -92,7 +92,7 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-10 col-md-offset-2">
+                                        <div class="col-md-8 col-md-offset-3">
                                             <a href="#" class="btn btn--gray product_filter__btn">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                                 Pesquisar</a>

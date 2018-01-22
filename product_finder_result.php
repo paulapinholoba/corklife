@@ -43,7 +43,11 @@
 
 </header>
 <?php include 'search.php' ?>
+
     <div class="main-content --result-page">
+
+    <?php include 'reset_choices.php' ?>
+
         <!-- start -->
         <section>
             <div class="container-fluid coloured_bg--product-smaller">
@@ -67,7 +71,7 @@
                                 </p>
                                 <span class="line"></span>
                                 <div class="btn--filter fright">
-                                    <a href="#" alt="Filtrar" class="btn btn--gray" data-toggle="popup-filter" id="showfilters">
+                                    <a href="#" alt="Filtrar" class="btn btn--gray" data-toggle="popup-filter" id="reset_choices">
                                         <i class="fa fa-filter" aria-hidden="true"></i>
                                          Redifinir Escolhas?</a>
                                 </div>

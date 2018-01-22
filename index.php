@@ -48,75 +48,75 @@
 	<div class="main-content">
 		<div class="container-fluid">
 
-		<div class="row coloured_bg">
-		<!-- start top banner -->
-		<section>
-			<div class="row ">
+			<div class="row coloured_bg">
+				<!-- start top banner -->
+				<section>
+					<div class="row ">
 
-				<!-- start main slider -->
-				<div class="main-slider-container">
-					<div class="main_slider my-carousel owl-carousel owl-theme my-carousel-home">
-						<!-- item #1 -->
-						<div class="item col-md-6 col-md-offset-1 col-xs-12 col-xs-offset-0">
-							<div class="main_slider--content">
-								<h1>Watercork</h1>
-								<div class="col-md-6 col-xs-12">
-									<p>Wood optical decorative in floating, glueless waterproof installation</p>
-									<a href="#" class="btn btn--gray">Saiba mais</a>
-								</div>
-							</div>
-							<div class="main_slider--image">
-								
-								<div style="background-image: url('assets/img/img_top-banner1_big.jpg');" class="image"></div>
-							</div>
-							<div class="main_slider--background container" style="background-color: #bec483;"></div>
-						</div>
-						<!-- item #2 -->
-						<div class="item col-md-6 col-md-offset-1 col-xs-12 col-xs-offset-0">
-							<div class="main_slider--content">
-								<h1>Watercork</h1>
-								<div class="col-md-6 col-xs-12">
-									<p>Wood optical decorative in floating, glueless waterproof installation</p>
-									<a href="#" class="btn btn--gray">Saiba mais</a>
-								</div>
-							</div>
-							<div class="main_slider--image">
-								
-								<div style="background-image: url('assets/img/img_top-banner1_big.jpg');" class="image"></div>
-							</div>
-							<div class="main_slider--background container" style="background-color: #ffc483;"></div>
-						</div>
-						<!-- item #3 -->
-						<div class="item col-md-6 col-md-offset-1 col-xs-12 col-xs-offset-0">
-							<div class="main_slider--content">
-								<h1>Watercork</h1>
-								<div class="col-md-6 col-xs-12">
-									<p>Wood optical decorative in floating, glueless waterproof installation</p>
-									<a href="#" class="btn btn--gray">Saiba mais</a>
-								</div>
-							</div>
-							<div class="main_slider--image">
-								
-								<div style="background-image: url('assets/img/img_top-banner1_big.jpg');" class="image"></div>
-							</div>
-							<div class="main_slider--background container" style="background-color: pink;"></div>
-						</div>
+						<!-- start main slider -->
+						<div class="main-slider-container">
+							<div class="main_slider my-carousel owl-carousel owl-theme my-carousel-home">
+								<!-- item #1 -->
+								<div class="item col-md-6 col-md-offset-1 col-xs-12 col-xs-offset-0">
+									<div class="main_slider--content">
+										<h1>Watercork</h1>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<p>Wood optical decorative in floating, glueless waterproof installation</p>
+											<a href="#" class="btn btn--gray">Saiba mais</a>
+										</div>
+									</div>
+									<div class="main_slider--image">
 
+										<div style="background-image: url('assets/img/img_top-banner1_big.jpg');" class="image" >
+											<!-- <img src="https://dummyimage.com/1274x510" width="1274" height="510" style="width: 100%; height: auto;"> -->
+										</div>
+										
+									</div>
+									<div class="main_slider--background container" style="background-color: #bec483;"></div>
+								</div>
+								<!-- item #2 -->
+								<div class="item col-md-6 col-md-offset-1 col-xs-12 col-xs-offset-0">
+									<div class="main_slider--content">
+										<h1>Watercork</h1>
+										<div class="col-md-6 col-xs-12">
+											<p>Wood optical decorative in floating, glueless waterproof installation</p>
+											<a href="#" class="btn btn--gray">Saiba mais</a>
+										</div>
+									</div>
+									<div class="main_slider--image">
+
+										<div style="background-image: url('assets/img/img_top-banner1_big.jpg');" class="image"></div>
+									</div>
+									<div class="main_slider--background container" style="background-color: #ffc483;"></div>
+								</div>
+								<!-- item #3 -->
+								<div class="item col-md-6 col-md-offset-1 col-xs-12 col-xs-offset-0">
+									<div class="main_slider--content">
+										<h1>Watercork</h1>
+										<div class="col-md-6 col-xs-12">
+											<p>Wood optical decorative in floating, glueless waterproof installation</p>
+											<a href="#" class="btn btn--gray">Saiba mais</a>
+										</div>
+									</div>
+									<div class="main_slider--image">
+
+										<div style="background-image: url('assets/img/img_top-banner1_big.jpg');" class="image"></div>
+									</div>
+									<div class="main_slider--background container" style="background-color: pink;"></div>
+								</div>
+
+							</div>
+
+							<div class="home-owl-pag">
+								<div class="owl-prev"></div>
+								<div class="owl-next"></div>
+							</div>
+						</div>
+						<!-- end main slider -->
 					</div>
-
-					<div class="home-owl-pag">
-						<div class="owl-prev"></div>
-						<div class="owl-next"></div>
-					</div>
-				</div>
-				<!-- end main slider -->
-
-
-
+				</section>
 			</div>
-		</section>
-	</div>
-</div>
+		</div>
 
 
 		<!-- start 'how to' and 'product finder' -->
@@ -124,47 +124,52 @@
 			<div class="container">
 				<div class="row">
 					<!-- 'how to' block -->
-					<div class="col-md-5 col-xs-12 small_contents">
-						<div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
-							<h2>Como fazer</h2>
-						</div>
-						<div class="col-md-12 col-xs-11">
-							<div class="slide_image_container how_dealer">
-								<div class="gray_bg"></div>
-								<a href="#" alt="#">
+					<a href="how_to.php" title="Consulte Aqui" class="col-md-5 col-xs-12 small_contents">
+						<div class="row">
+
+							<div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
+								<h2>Como fazer</h2>
+							</div>
+							<div class="col-md-12 col-xs-11">
+								<div class="slide_image_container how_dealer">
+									<div class="gray_bg"></div>
 									<img src="assets/img/img_how_to.jpg" title="Como Fazer" class="img-responsive">
-								</a>
+								</div>
+							</div>
+							<div class="small_contents--under"></div>
+
+							<div class="col-md-9 col-md-offset-2 col-xs-10 col-xs-offset-1">
+								<p class="info">Se precisa de informação técnica ou simplesmente de ajuda na forma como aplica os nossos produtos</p>
+								<div class="btn btn--blue">Consulte Aqui</div>
 							</div>
 						</div>
-						<div class="small_contents--under"></div>
-						<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-							<p class="info">Se precisa de informação técnica ou simplesmente de ajuda na forma como aplica os nossos produtos</p>
-							<a href="#" title="Consulte Aqui" class="btn btn--blue">Consulte Aqui</a>
-						</div>
-					</div>
+					</a>
+
 
 					<!-- 'product finder' block -->
-					<div class="col-md-5 col-md-offset-1 col-xs-12 small_contents">
-						<div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
-							<h2>Escolher produtos</h2>
-						</div>
-						<div class="col-md-12 col-xs-11">
-							<div class="slide_image_container how_dealer">
-								<div class="gray_bg"></div>
-								<a href="#" alt="#">
-									<img src="assets/img/img_product_finder.jpg" title="Como Fazer" class="img-responsive">
-								</a>
+					<a href="product_listing.php" title="Escolher Produtos" class="col-md-5 col-md-offset-1 col-xs-12 small_contents">
+						<div class="row">
+
+							<div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
+								<h2>Escolher produtos</h2>
+							</div>
+							<div class="col-md-12 col-xs-11">
+								<div class="slide_image_container how_dealer">
+									<div class="gray_bg"></div>
+									<img src="assets/img/img_how_to.jpg" title="Como Fazer" class="img-responsive">
+								</div>
+							</div>
+							<div class="small_contents--under"></div>
+
+							<div class="col-md-9 col-md-offset-2 col-xs-10 col-xs-offset-1">
+								<p class="info">Escolha entre as várias possibilidades da nossa gama de produtos para encontrar o que melhor se adapta a si!</p>
+								<div class="btn btn--blue">Consulte Aqui</div>
 							</div>
 						</div>
-						<div class="small_contents--under"></div>
-						<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-							<p class="info">Escolha entre as várias possibilidades da nossa gama de produtos para encontrar o que melhor se adapta a si!</p>
-							<a href="#" title="Consulte Aqui" class="btn btn--blue">Procure Aqui</a>
-						</div>
-					</div>
+					</a>
+
+
 				</div>
-
-
 			</div>
 		</section>
 
@@ -180,7 +185,7 @@
 									<h1>Porquê Corktech?</h1>
 								</div>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa maiores nesciunt.</p>
-								<a href="#" alt="" class="btn btn--gray">Saiba Mais</a>
+								<a href="#" title="" class="btn btn--gray">Saiba Mais</a>
 							</div>
 						</div>
 					</div>

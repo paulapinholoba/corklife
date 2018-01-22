@@ -1,5 +1,5 @@
 <!-- start footer -->
-<div class="row container_end hideme">
+<div class="row container_end">
 	<footer>
 		<div class="container">
 			<div class="col-md-3 col-xs-12">
@@ -11,47 +11,57 @@
 				</a> -->
 			</div>
 			<div class="col-md-2 col-xs-12">
-				<a href="#" alt="Produtos" class="container_end--title">Produtos</a>
+				<div class="container_end--title">
+					<a href="#" alt="Produtos">Produtos</a>
+				</div>
 				<!-- if it has more than 5 links, it should turn into 2 columns by adding class col-half-mobile -->
 				<ul class="col-half-mobile">
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Decolife">Decolife</a>
 					</li>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Freestyle">Freestyle</a>
 					</li>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Aquanatura">Aquanatura</a>
 					</li>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="StudioStyle">StudioStyle</a>
 					</li>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Corkparquet">Corkparquet</a>
 					</li>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Vernatura">Vernatura</a>
 					</li>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Escolher produtos">Escolher produtos</a>
 					</li>
 				</ul>
 			</div>
 			<div class="col-md-2 col-xs-12">
-				<a href="#" alt="Corklife" class="container_end--title">Corklife</a>
+				<div class="container_end--title">
+					<a href="#" alt="Corklife">Corklife</a>
+				</div>
 				<ul>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Empresa">Empresa</a>
 					</li>
-					<li>
+					<li class="container_link">
 						<a href="#" alt="Tecnologia">Tecnologia</a>
 					</li>
 				</ul>
 			</div>
 			<div class="col-md-2 col-xs-12">
-				<a href="#" alt="Como Fazer" class="container_end--title">Como Fazer</a>
-				<a href="#" alt="Onde Comprar" class="container_end--title">Onde Comprar</a>
-				<a href="contacts.php" alt="Contactos" class="container_end--title">Contactos</a>
+				<div class="container_end--title">
+					<a href="#" alt="Como Fazer">Como Fazer</a>
+				</div>deactivated
+				<div class="container_end--title">
+					<a href="#" alt="Onde Comprar">Onde Comprar</a>
+				</div>deactivated
+				<div class="container_end--title">
+					<a href="contacts.php" alt="Contactos">Contactos</a>
+				</div>
 			</div>
 			<div class="col-md-3 col-xs-12">
 				<!-- <div class="social_nets">
@@ -90,14 +100,16 @@
 </div>
 
 <!-- start copy -->
-<div class="row copy">
+<div class="copy">
 	<div class="container">
 		<div class="col-md-5">
 			<p>&copy; 2017 Amorim. Todos os direitos reservados.</p>
 		</div>
 		<div class="col-md-4 footer-space">
-			<p></p><a href="#" title="Política de Privacidade">Política de Privacidade</a>
-			<a href="#" title="Termos e Condições" class="terms">Termos e Condições</a></p>
+			<p></p>
+			<a href="#" title="Política de Privacidade">Política de Privacidade</a>
+			<a href="#" title="Termos e Condições" class="terms">Termos e Condições</a>
+			</p>
 		</div>
 		<div class="col-md-1 col-md-offset-2 footer-space">
 			<a href="#" title="Desenvolvido por Loba">

@@ -50,7 +50,7 @@
 			<div class="row">
 				<a class="close"></a>
 				<div class="col-md-10 col-md-offset-2">
-		
+
 					<h2>filtre os produtos de "freestyle"</h2>
 					<form action="#">
 						<div class="row form_line">
@@ -73,10 +73,10 @@
 							<div class="col-md-9 form_line--selection">
 								<input type="checkbox" id="clara" />
 								<label for="clara" class="col-md-3">Clara</label>
-								<input type="checkbox" id="media" checked="checked" />
-								<label for="media" class="col-md-3">Média</label>
-								<input type="checkbox" id="escura" />
-								<label for="escura" class="col-md-3">Escura</label>
+								<input type="checkbox" id="med" />
+								<label for="med" class="col-md-3">Média</label>
+								<input type="checkbox" id="produto_tonalidade_escura" />
+								<label for="produto_tonalidade_escura" class="col-md-3">Escura</label>
 							</div>
 						</div>
 						<div class="row form_line">
@@ -84,7 +84,7 @@
 								<h4>formato</h4>
 							</div>
 							<div class="col-md-9 form_line--selection">
-								<input type="checkbox" id="telha" checked="checked" />
+								<input type="checkbox" id="telha" />
 								<label for="telha" class="col-md-3">Telha</label>
 								<input type="checkbox" id="placa" />
 								<label for="placa" class="col-md-3">Placa</label>
@@ -97,8 +97,8 @@
 							<div class="col-md-9 form_line--selection">
 								<input type="checkbox" id="pequenas" />
 								<label for="pequenas" class="col-md-3">Pequenas</label>
-								<input type="checkbox" id="medias" checked="checked" />
-								<label for="medias" class="col-md-3">Médias</label>
+								<input type="checkbox" id="med" />
+								<label for="med" class="col-md-3">Médias</label>
 								<input type="checkbox" id="longas" />
 								<label for="longas" class="col-md-3">Longas</label>
 							</div>
@@ -157,10 +157,10 @@
 								<h4>waterproof</h4>
 							</div>
 							<div class="col-md-9 form_line--selection">
-								<input type="radio" name="radio-group" id="sim">
-								<label for="sim" class="col-md-3">Sim</label>
-								<input type="radio" name="radio-group" id="nao" checked="checked">
-								<label for="nao" class="col-md-3">Não</label>
+								<input type="radio" name="radio-group" id="yep">
+								<label for="yep" class="col-md-3">Sim</label>
+								<input type="radio" name="radio-group" id="nop">
+								<label for="nop" class="col-md-3">Não</label>
 							</div>
 						</div>
 						<a href="#" class="col-md-offset-2 btn btn--gray">Aplicar Filtros</a>
@@ -190,9 +190,11 @@
 									<p>Wood or Stone decorative in floating, glueless instalation</p>
 									<a href="info_range.php" alt="Saiba mais sobre esta gama" class="btn btn--blue">Saiba mais sobre esta gama</a>
 								</div>
+								<div class="color_behind hidden-xs" style="background-color: #939961;"></div>
 							</div>
 						</div>
 						<img src="https://dummyimage.com/1920x662/cccccc/fff" title="https://dummyimage.com/1920x662/cccccc/fff" class="img-responsive fright">
+
 					</div>
 				</div>
 			</div>
@@ -213,99 +215,93 @@
 						</div>
 					</div>
 					<!-- first line with 4 images -->
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+					<div class="row">
 
-							<!-- <div class="image--under"></div> -->
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-
-							<!-- <div class="image--under"></div> -->
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-
-							<!-- <div class="image--under"></div> -->
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty Limestone Rusty Limestone</p>
 						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-
-							<!-- <div class="image--under"></div> -->
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
 					</div>
 					<!-- second line with 4 images -->
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-							<!-- <div class="image--under"></div> -->
+					<div class="row">
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-
-							<!-- <div class="image--under"></div> -->
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-							<!-- <div class="image--under"></div> -->
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-
-							<!-- <div class="image--under"></div> -->
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+							</div>
+							<p>Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
 					</div>
 					<!-- third line with 4 images -->
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-							<!-- <div class="image--under"></div> -->
-						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+					<div class="row">
 
-							<!-- <div class="image--under"></div> -->
-						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
-							<!-- <div class="image--under"></div> -->
-						</div>
-						<p>Limestone Rusty</p>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
-						<div class="product_list--each__image">
-							<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
 
-							<!-- <div class="image--under"></div> -->
+							</div>
+							<p>Limestone Rusty</p>
 						</div>
-						<p>Limestone Rusty</p>
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+
+
+							</div>
+							<p>Limestone Rusty</p>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+
+							</div>
+							<p>Limestone Rusty</p>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-12 product_list--each">
+							<div class="product_list--each__image">
+								<img src="assets/img/product1.jpg" class="img-responsive" title="Product 1">
+
+
+							</div>
+							<p>Limestone Rusty</p>
+						</div>
 					</div>
 					<!-- it's the end of 12 images and now load more images  -->
 					<div class="row">

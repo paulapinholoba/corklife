@@ -170,25 +170,24 @@
 		<!-- start top banner -->
 		<section>
 
-			<div class="container-fluid coloured_bg--product--institutional --corktech">
+			<div class="container-fluid coloured_bg--product--institutional">
 
-				<div class="container">		
+				<div class="container">
 					<div class="topBanner">
 						<div class="product_approach_inst how_to-detail">
 							<div class="col-md-10 col-xs-12">
 								<div class="institutional_mobile">
 									<div class="product_approach_inst--info">
 										<h5>Corklife</h5>
-										<h1>Empresa</h1>
-										<p>Wood or Stone decorative in floating, glueless instalation</p>
-										<!-- <h2>Fold Down</h2> -->
+										<h1>Corktech</h1>
+										<p>Wood or Stone decorative in floating, glueless installation</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<img src="https://dummyimage.com/1920x662/cccccc/fff" title="https://dummyimage.com/1920x662/cccccc/fff" class="img-responsive fright">
 					</div>
-		
+
 				</div>
 			</div>
 		</section>
@@ -199,9 +198,9 @@
 			<div class="row">
 
 				<div class="container --institutional">
+
 					<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0">
-						<div class="highlight_txt--big">Amorim Revestimentos
-						</div>
+						<div class="highlight_txt--big">Cortiça é sustentabilidade e inovação</div>
 					</div>
 					<div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi ex accusantium eos numquam minima assumenda laborum
@@ -235,76 +234,102 @@
 				</div>
 			</div>
 
-			<div class="container">
 
-				<div class="col-md-12 col-xs-12">
-					<div class="row">
-						<div class="darker-container">
-							<h2>A Amorim revestimentos em números</h2>
-							<ul>
-								<li>Presença mundial em 72 países</li>
-								<li>2 unidades industriais num total de 200.000 m
-									<sup>2</sup>
-								</li>
-								<li>7 unidades de distribuição</li>
-								<li>Capacidade de produção de 10M/m
-									<sup>2</sup>
-								</li>
-								<li>544 colaboradores</li>
-								<li>Volume de negócios 124M€</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
 
 		</section>
-		<section>
-			<div class="col-md-5 col-md-offset-2 col-xs-12 col-xs-offset-0">
-				<div class="--institutional">
-					<h2>O Grupo - Corticeira Amorim</h2>
-					<p class="image-spaces--txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi placeat, rem itaque quae deserunt tenetur provident doloremque
-						nam perferendis eos omnis beatae unde officiis consequuntur atque corrupti, officia quisquam asperiores.</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0">
-				<div class="darker-container--right">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum necessitatibus iure omnis velit architecto minus
-						consectetur, porro et!</p>
-				</div>
-			</div>
-		</section>
 
-		<div class="clearfix"></div>
-
-		<div class="row">
-			<div class="horizontal_line--inst"></div>
-		</div>
 		<!-- start gallery -->
-		<section class="hideme">
+		<section>
 			<div class="container">
 				<div class="row overflow">
 					<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
-						<div class="--institutional">
-
-							<div class="gallery owl-carousel owl-theme my-carousel my-carousel-22">
-								<div class="item">
-									<!-- horizontal -->
-									<img src="https://dummyimage.com/1016x569/cccccc/000000" class="hor" alt="https://dummyimage.com/1016x569/cccccc/000000">
-								</div>
-
-								<div class="item">
-									<!-- vertical -->
-									<img src="https://dummyimage.com/600x640/444444/000000" class="ver" alt="https://dummyimage.com/600x640/444444/000000">
-								</div>
-
+						<div class="gallery owl-carousel owl-theme my-carousel my-carousel-22">
+							<div class="item">
+								<!-- horizontal -->
+								<img src="https://dummyimage.com/1016x569/cccccc/000000" class="hor" alt="https://dummyimage.com/1016x569/cccccc/000000">
 							</div>
 
+							<div class="item">
+								<!-- vertical -->
+								<img src="https://dummyimage.com/600x640/444444/000000" class="ver" alt="https://dummyimage.com/600x640/444444/000000">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end gallery -->
+
+
+		<section>
+			<div class="container">
+				<div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0">
+					<div class="image-spaces--txt">
+
+						<h2>SOBRE A CORTIÇA</h2>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi placeat, rem itaque quae deserunt tenetur provident
+							doloremque nam perferendis eos omnis beatae unde officiis consequuntur atque corrupti, officia quisquam asperiores.</p>
+						<div class="two_columns">
+							<div class="image_behind">
+								<img src="https://dummyimage.com/474x330/cccccc/fff" alt="https://dummyimage.com/474x330/cccccc/fff" class="img-responsive">
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi placeat, rem itaque quae deserunt tenetur provident
+							doloremque nam perferendis eos omnis beatae unde officiis consequuntur atque corrupti, officia quisquam asperiores.</p>
+					</div>
+				</div>
+				<div class="col-md-5 col-md-offset-0 col-xs-12 col-xs-offset-0">
+					<div class="image-spaces--txt">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi placeat, rem itaque quae deserunt tenetur provident
+							doloremque nam perferendis eos omnis beatae unde officiis consequuntur atque corrupti, officia quisquam asperiores.</p>
+
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi placeat, rem itaque quae deserunt tenetur provident
+							doloremque nam perferendis eos omnis beatae unde officiis consequuntur atque corrupti, officia quisquam asperiores.</p>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi placeat, rem itaque quae deserunt tenetur provident
+							doloremque nam perferendis eos omnis beatae unde officiis consequuntur atque corrupti, officia quisquam asperiores.</p>
+						<div class="two_columns">
+							<div class="image_behind--smaller">
+								<img src="https://dummyimage.com/474x298/cccccc/fff" alt="https://dummyimage.com/474x298/cccccc/fff" class="img-responsive">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- start 2 columns -->
+
+		<div class="clearfix"></div>
+		<!-- start gallery -->
+		<section>
+			<div class="container">
+				<div class="row overflow">
+					<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+						<div class="gallery owl-carousel owl-theme my-carousel my-carousel-22">
+							<div class="item">
+								<!-- horizontal -->
+								<img src="https://dummyimage.com/1016x569/cccccc/000000" class="hor" alt="https://dummyimage.com/1016x569/cccccc/000000">
+							</div>
+
+							<div class="item">
+								<!-- vertical -->
+								<img src="https://dummyimage.com/600x640/444444/000000" class="ver" alt="https://dummyimage.com/600x640/444444/000000">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end gallery -->
+
+		<!-- <div class="clearfix"></div>
+		<div class="row">
+			<div class="horizontal_line--inst"></div>
+		</div> -->
+
 
 		<!-- start last section -->
 		<section>

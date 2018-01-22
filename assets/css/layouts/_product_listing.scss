@@ -1,6 +1,6 @@
 .coloured_bg--product_listing {
     background-color: $gray-lighter; // height: 500px;
-    height: 445px;
+    height: 440px;
     position: relative;
     z-index: 0; // margin-bottom: 140px;
     margin-bottom: 110px;
@@ -10,21 +10,23 @@
     display: none;
 }
 
+.color_behind {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 24%;
+    z-index: 1; // width: 60%;
+    width: 76%;
+    height: 84% !important;
+    // background-color: #939961;
+}
+
 .product_approach {
     position: absolute; // top: calc(60% - 48px);
     top: calc(50% - 48px);
     left: 25px;
-    &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: -10px;
-        left: 24%;
-        z-index: 1; // width: 60%;
-        width: 76%;
-        height: 84% !important;
-        background-color: #939961;
-    }
+    
     .product_approach--info {
         background-color: $gray-lighter;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -58,7 +60,8 @@
 }
 
 .product_list {
-    margin: 100px 0;
+    // margin: 100px 0;
+    margin: 0 0 100px 0;
     .btn--filter {
         margin-bottom: 25px;
         margin-top: 0;
@@ -74,15 +77,14 @@
         position: relative;
     }
     .product_list--each {
-        margin-bottom: 25px;
-        // padding: 0 5px;
+        margin-bottom: 25px; // padding: 0 5px;
         .product_list--each__image {
             overflow: hidden;
             max-width: 100%; // max-height: 288px;
             max-height: auto;
             margin-bottom: 25px;
             &:hover {
-                box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.48);
+                box-shadow: 0px 2px 22px 0px rgba(0,0,0,0.32);
             }
         }
         img {
@@ -91,45 +93,40 @@
             // max-width: 100%;
             transition: all 200ms ease;
             cursor: pointer;
-            width: 100%; // width: calc(100% - 10px);
-            // box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.48);
-        } // .image--under {
-        //     background-color: $gray-lighter;
-        //     width: 50%;
-        //     right: 10px;
-        //     top: 15px;
-        //     position: absolute;
-        //     z-index: -1;
-        //     height: 65%;
-        // }
+            width: 100%; 
+        }
         p {
             @include Merriweather-Bold(15px, normal, $gray);
-            width: 80%;
+            // width: 80%;
             cursor: pointer;
+            position: relative;
+            float:left;
             &:before {
                 content: '';
                 display: block;
                 position: absolute;
                 transform: translateX(-100%);
                 transition: all 200ms ease;
-                left: 10px;
+                left: -5px;
                 bottom: 0;
                 right: 0;
                 z-index: -1;
                 opacity: 0;
                 background-color: $gray-lighter;
                 height: 6px;
-                width: 40%;
             }
+            
         }
         &:hover {
             img {
                 transform: scale(1.1, 1.1);
             }
             p {
+                color:$gray-dark;
                 &:before {
                     transform: translateX(0);
                     opacity: 1;
+                    width: 100%;
                 }
             }
         }
@@ -142,13 +139,12 @@
     left: 0;
     right: 0;
     padding: 100px 0;
-    background-color: $gray-lighter;
-    opacity: 1;
-    transition: all 1000ms ease;
+    background-color: $gray-lighter; // opacity: 1;
+    // transition: all 1000ms ease;
     display: none;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
     z-index: 9999;
     &:before,
     &:after {
@@ -194,8 +190,8 @@
             background-color: $blue-light;
             height: 2px;
             width: 30px;
-            margin-right: 24px;
-            margin-left: -50px;
+            margin-right: 14px;
+            margin-left: -40px;
         }
     }
 }
@@ -357,7 +353,7 @@
     /* accessibility */
     [type="checkbox"]:checked:focus+label:before,
     [type="checkbox"]:not(:checked):focus+label:before {
-        border: 2px dotted $brown;
+        border: 2px solid $brown-light;
     }
     /* hover style just for information */
     label:hover:before {
@@ -367,8 +363,8 @@
 
 .bg-overlay {
     background: $white;
-    opacity: 0.5;
-    z-index: 9;
+    opacity: 0.8;
+    z-index: 999999;
     width: 100%;
     height: 100% !important;
     position: fixed;
@@ -383,17 +379,21 @@
         z-index: 9999999;
         background: $gray-lighter; //opacity: 1;
     }
-    .coloured_bg--product {
-        height: 350px !important;
-        margin-bottom: 0 !important;
+    .coloured_bg--product_listing{
+        height: 390px;
+        margin-bottom:0;
     }
+    // .coloured_bg--product {
+    //     height: 350px !important;
+    //     margin-bottom: 0 !important;
+    // }
     .topBanner img {
         box-shadow: none;
         margin-top: 10px;
     }
     .product_approach--title {
         width: 100%;
-        background-color: #939961;
+        // background-color: #939961;
         top: 0;
         left: 10px;
         padding: 5px 0 5px 10px;
@@ -457,7 +457,27 @@
             font-size: 14px;
             &:before {
                 margin-left: -10px;
+                margin-bottom: 5px;
+                margin-right: 10px;
             }
+        }
+    }
+    .top-search-filter {
+        hr {
+            margin: 40px 0;
+        }
+    }
+    .topsearch_wrapper {
+        padding-right: 0;
+        &.active {
+            .product_filter {
+                right: 0;
+            }
+        }
+        .product_filter {
+            left: auto;
+            right: -105%;
+            transition: all 200ms ease;
         }
     }
     .product_filter__btn {
@@ -468,11 +488,22 @@
     }
 }
 
+/* ***************************************************** other breakpoints */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .coloured_bg--product_listing{
+        height: 240px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1279px) {
+    .coloured_bg--product_listing{
+        height: 320px;
+        margin-bottom: 90px;
+    }
+}
 
-/* ******************************************* breakpoint for 1440 */
-
-// @media screen and (width: 1440px) {
-//     .product_list {
-//         margin-top: 0;
-//     }
-// }
+@media screen and (min-width:1500px) and (max-width: 1920px) {
+    .coloured_bg--product_listing{
+        height: 600px;
+        margin-bottom: 32px;
+    }
+}

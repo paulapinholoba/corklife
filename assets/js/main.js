@@ -1,3 +1,5 @@
+var swiper;
+
 //Chamar todas as funÃ§Ãµes relacionadas com tamanhos para tomarem alteraÃ§Ãµes no resize
 function resizableElements(viewport) {
 
@@ -23,7 +25,7 @@ function resizableElements(viewport) {
 
       toggleItems();
 
-      var swiper = new Swiper('.swiper-container', {
+      swiper = new Swiper('.swiper-container', {
         pagination: {
             el: '.swiper-pagination',
             type: 'progressbar',
@@ -44,7 +46,7 @@ function resizableElements(viewport) {
     resizableElements(viewport);
 
     $(".main-content").css("margin-top", $("header").outerHeight(true) - 1);
-    if($(window).width() > 1024){
+    if($(window).width() > 768){
       $(".product_detail__slider").css("height", $(".max-height").outerHeight(true));
       $(".product_detail__slider .my-carousel img").css("height", $(".max-height").outerHeight(true) + 8);
       $(".product_detail__slider .my-carousel .owl-item").css("height", $(".max-height").outerHeight(true));
@@ -95,38 +97,75 @@ if($(window).width() > 1024){
 
 });
 
+function nextSwipe(){
+  swiper.slideNext();
+}
+
 function toggleItems() {
   // show and hide the search window
   $("#search-filter").click(function () {
-    $(".top-search-filter").show();
+    $(".top-search-filter").fadeIn();
+    $(".topsearch_wrapper").addClass('active');
     $(".mask-filter").addClass('bg-overlay');
   });
 
   $(".top-search-filter .close").click(function () {
-    $(".top-search-filter").hide();
+    $(".top-search-filter").fadeOut();
     $(".mask-filter").removeClass('bg-overlay');
   });
 
   $(".mask-filter").click(function () {
-    $(".top-search-filter").hide();
+    $(".top-search-filter").fadeOut();
     $(this).removeClass('bg-overlay');
   });
 
   // show and hide the filter's window
   $("#showfilters").click(function () {
-    $(".product_filter").show();
+    $(".product_filter").fadeIn();
     $(".mask-filter").addClass('bg-overlay');
   });
 
   $(".product_filter .close").click(function () {
-    $(".product_filter").hide();
+    $(".product_filter").fadeOut();
     $(".mask-filter").removeClass('bg-overlay');
   });
 
   $(".mask-filter").click(function () {
-    $(".product_filter").hide();
+    $(".product_filter").fadeOut();
     $(this).removeClass('bg-overlay');
   });
+
+// show and hide the doubts moodle's window
+$("#moodle").click(function () {
+  $(".doubts_form").fadeIn();
+  $(".mask-filter").addClass('bg-overlay');
+});
+
+$(".product_filter .close").click(function () {
+  $(".doubts_form").fadeOut();
+  $(".mask-filter").removeClass('bg-overlay');
+});
+
+$(".mask-filter").click(function () {
+  $(".doubts_form").hide();
+  $(this).removeClass('bg-overlay');
+});
+
+// show and hide the reset choices window
+$("#reset_choices").click(function () {
+  $(".--swiper").fadeIn();
+  $(".mask-filter").addClass('bg-overlay');
+});
+
+$(".--swiper--content .close").click(function () {
+  $(".--swiper").fadeOut();
+  $(".mask-filter").removeClass('bg-overlay');
+});
+
+$(".mask-filter").click(function () {
+  $(".--swiper").hide();
+  $(this).removeClass('bg-overlay');
+});
 
   // product detail slider
   $(".product_detail__slider .btn-open").click(function(e){

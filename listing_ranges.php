@@ -46,8 +46,8 @@
 		<div class="product_filter">
 			<div class="row">
 				<a class="close"></a>
-				<div class="col-md-10 col-md-offset-2">
-		
+				<div class="col-md-10 col-md-offset-2 col-xs-10 col-xs-offset-1">
+
 					<h2>filtre os produtos de "freestyle"</h2>
 					<form action="#">
 						<div class="row form_line">
@@ -181,10 +181,11 @@
 		</section>
 		<!-- start contact side text + form -->
 		<section>
+
 			<div class="container">
 				<div class="product_list">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 col-xs-12">
 							<div class="btn--filter fright">
 								<a href="#" alt="Filtrar" class="btn btn--gray" id="showfilters">
 									<i class="fa fa-filter" aria-hidden="true"></i>
@@ -193,56 +194,114 @@
 						</div>
 					</div>
 				</div>
-				<div class="row range_container">
-					<div class="col-xs-12">
-						<div class="row">
-							<div class="col-md-7 col-md-offset-1 col-xs-11 col-xs-offset-0">
-								<img src="https://dummyimage.com/704x245/ccc/fff" alt="https://dummyimage.com/704x245/ccc/fff" class="img-responsive img--right">
-								<div class="range_container__items to--right">
-									<div class="range_container--text--under" style="background-color:#cdcd65;"></div>
-									<div class="range_container--text">
 
-										<h2>Studiostyle</h2>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+				<!-- image with text aligned on the RIGHT -->
+				<div class="row range_container">
+					<div class="pull_half_col">
+
+						<div class="col-md-7 col-md-offset-1 col-xs-11 col-xs-offset-0">
+							<div class="row">
+								<img src="https://dummyimage.com/704x245/ccc/fff" alt="https://dummyimage.com/704x245/ccc/fff" class="img-responsive">
+							</div>
+						</div>
+						<div class="col-md-4 col-md-push-7 col-xs-12 before_line_container">
+							<div class="row row-eq-height">
+
+								<!-- border for mobile -->
+								<!-- <div class="col-xs-11 col-sm-12 hidden-md hidden-lg line_container">
+									<div class="line --top" style="background-color: #8a905c;"> </div>
+									<div class="line --left" style="background-color: #8a905c;"> </div>
+								</div> -->
+								<!-- end borders for mobile -->
+
+								<div class="col-md-3 hidden-sm hidden-xs line_container --to_right">
+									<div class="line --top" style="background-color: #8a905c;"> </div>
+									<div class="line --left" style="background-color: #8a905c;"> </div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-sm-offset-0 col-md-11 col-md-offset-0 col-xs-11 col-xs-offset-1">
+
+										<!-- border for mobile -->
+										<div class="col-xs-11 col-sm-12 hidden-md hidden-lg line_container">
+											<div class="line --top" style="background-color: #8a905c;"> </div>
+											<div class="line --left" style="background-color: #8a905c;"> </div>
+										</div>
+										<!-- end borders for mobile -->
+
+										<div class="wrapper">
+											<h2>Studiostyle</h2>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+										</div>
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 
+				<!-- image with text aligned on the LEFT -->
 				<div class="row range_container">
-					<div class="col-xs-12">
-						<div class="row">
-							<div class="col-md-offset-4 col-md-7 col-xs-offset-1 col-xs-11">
-								<div class="range_container__items to--left">
-									<div class="range_container--text--under_to--left" style="background-color:#517ba8;"></div>
-									<div class="range_container--text">
-										<h2>Studiostyle</h2>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<div class="push_half_col">
+
+						<div class="col-md-4 col-md-offset-1 col-xs-12 before_line_container align_left">
+							<div class="row row-eq-height">
+
+								<div class="row bring_to_front col-md-12">
+									<div class="col-md-11 col-xs-11 col-sm-11">
+
+										<!-- border for mobile -->
+										<div class="col-xs-11 col-sm-11 hidden-md hidden-lg line_container">
+											<div class="line --top --pull_right" style="background-color: #8a905c;"> </div>
+											<div class="line --right " style="background-color: #8a905c;"> </div>
+										</div>
+										<!-- end borders for mobile -->
+										<div class="wrapper line">
+											<h2>Studiostyle</h2>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+										</div>
 									</div>
 								</div>
-								<img src="https://dummyimage.com/704x245/ccc/fff" alt="https://dummyimage.com/704x245/ccc/fff" class="img-responsive img--right">
+
+								<div class="col-md-3 line_container hidden-sm hidden-xs --to_left">
+									<div class="line --top --pull_right" style="background-color: #8a905c;"> </div>
+									<div class="line --right " style="background-color: #8a905c;"> </div>
+								</div>
 							</div>
 
 						</div>
+
+						<div class="col-md-7 col-md-push-4 col-md-offset-0 col-xs-11 col-xs-offset-1 col-md-push-0">
+
+							<div class="row">
+								<img src="https://dummyimage.com/704x245/ccc/fff" alt="https://dummyimage.com/704x245/ccc/fff" class="img-responsive">
+							</div>
+						</div>
 					</div>
+
 				</div>
+
 		</section>
 
 		<section>
 			<div class="row">
+				<div class="container">
 
-				<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
-					<div class="product_finder--container">
-						<div class="col-md-6 col-md-offset-3 col-xs-offset-1 col-xs-10">
+					<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+						<div class="margin_bottom">
 
-							<h2>Product Finder</h2>
-							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eos eius at quod dolorem perferendis dolor possimus
-								esse laudantium adipisci. Reiciendis sequi omnis placeat rem iure asperiores dicta dolorum voluptatum.</p>
-							<a href="product_finder.php" class="btn btn--gray">Começar aqui</a>
+							<div class="product_finder--container">
+
+								<div class="col-md-6 col-md-offset-3 col-xs-offset-1 col-xs-10">
+
+									<h2>Product Finder</h2>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eos eius at quod dolorem perferendis dolor possimus
+										esse laudantium adipisci. Reiciendis sequi omnis placeat rem iure asperiores dicta dolorum voluptatum.</p>
+									<a href="product_finder.php" class="btn btn--gray">Começar aqui</a>
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>

@@ -61,7 +61,7 @@
 
 
 							<!-- form -->
-							<div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0 contact--form fright">
+							<div class="col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0 contact--form col-md-push-5">
 								<h3>Deixe-nos uma mensagem</h3>
 								<form action="#">
 									<div class="warnings">
@@ -77,7 +77,11 @@
 										</div>
 									</div>
 									<input type="text" name="" placeholder="*Nome" required>
+									<div class="incomplete_field">
+										<span class="red_hairline"></span>
+									
 									<input type="text" name="" placeholder="*Contacto" required>
+									</div>
 									<input type="text" name="" placeholder="*Email" required>
 
 									<div class="custom-select">
@@ -98,7 +102,7 @@
 							</div>
 
 							<!-- address -->
-							<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0 address">
+							<div class="col-md-4 col-md-offset-1 col-xs-12 col-xs-offset-0 address col-md-pull-6">
 								<div class="highlight_txt--big">Entre em contacto connosco sempre que precisar.</div>
 								<h3>morada</h3>
 								<h4>Amorim Investimentos S.A.</h4>
@@ -127,16 +131,16 @@
 			</div>
 		</section>
 
-	</div>
-	<!-- footer -->
-	<?php include 'footer.php' ?>
+		</div>
+		<!-- footer -->
+		<?php include 'footer.php' ?>
 
 
-	<!-- inject:js -->
-	<script src="assets/vendor.min.js"></script>
-	<script src="assets/js/functions.js"></script>
-	<script src="assets/js/main.js"></script>
-	<!-- endinject -->
+		<!-- inject:js -->
+		<script src="assets/vendor.min.js"></script>
+		<script src="assets/js/functions.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- endinject -->
 </body>
 
 </html>

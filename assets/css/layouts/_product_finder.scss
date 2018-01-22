@@ -22,6 +22,57 @@
     }
 }
 
+// .product_finder--container.--swiper{
+//         position: relative;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         padding: 100px 0;
+//         background-color: #EFEBE5;
+//         display: none;
+//         width: 100%;
+//         height: 100%;
+//         box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+//         z-index: 9999;
+//         margin-top:200px;
+// }
+
+
+
+.--swiper--content {
+ 
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 2px;
+            background-color: $brown;
+            transform: rotate(45deg);
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 2px;
+            background-color: $brown;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
 .popup-filter {
     opacity: 0;
     visibility: hidden;
@@ -113,28 +164,28 @@
     z-index: -1;
 }
 
+
 /* for mobile breakpoints *********************************************************** */
-@include max-xs{
-    .product_finder--container{
-        margin:0;
+
+@include max-xs {
+    .product_finder--container {
+        margin: 0;
     }
-    .--swiper{
-        .swiper-slide__form strong{
+    .--swiper {
+        .swiper-slide__form strong {
             @include Montserrat-Bold(25px, normal, $gray);
         }
-
-        .swiper-slide__num{
+        .swiper-slide__num {
             font-size: 50px;
         }
-        .form_line--selection{
+        .form_line--selection {
             justify-content: none;
             display: inline-block;
-            .selection__item{
-                width:100%;
-                float:left;
-                margin-left:0;
+            .selection__item {
+                width: 100%;
+                float: left;
+                margin-left: 0;
             }
         }
-
     }
 }

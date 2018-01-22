@@ -46,7 +46,7 @@
 	<div class="main-content">
 		<!-- start top banner -->
 		<section>
-			<div class="container-fluid coloured_bg--product-smaller">
+			<div class="container-fluid coloured_bg--product-smaller --dealer_locator">
 				<div class="container">
 					<div class="topBanner">
 						<h1 class="title-underline">Onde Comprar</h1>
@@ -419,10 +419,10 @@
 
 		<section>
 			<!-- <div class="container"> -->
-			<div class="col-md-5 col-md-offset-1 col-xs-offset-0">
+			<div class="col-md-6 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 				<div class="map_search">
 					<div class="row">
-						<div class="col-xs-12">
+						<div class="col-xs-12 col-sm-12">
 							<h2>Encontre os nossos produtos perto de si</h2>
 							<form action="#" class="map_search--form">
 								<div class="map_search--form--content">
@@ -465,6 +465,7 @@
 								<br> 3720-232 Oliveira de Azeméis
 								<br> Portugal
 							</p>
+							<a href="#" title="Saiba como chegar">Saiba como chegar no googlemaps</a>
 						</div>
 						<div class="col-md-3 col-md-offset-1">
 							<h2>Telefone</h2>
@@ -485,6 +486,7 @@
 								<br> 3720-232 Oliveira de Azeméis
 								<br> Portugal
 							</p>
+							<a href="#" title="Saiba como chegar">Saiba como chegar no googlemaps</a>
 						</div>
 						<div class="col-md-3 col-md-offset-1">
 							<h2>Telefone</h2>
@@ -505,6 +507,7 @@
 								<br> 3720-232 Oliveira de Azeméis
 								<br> Portugal
 							</p>
+							<a href="#" title="Saiba como chegar">Saiba como chegar no googlemaps</a>
 						</div>
 						<div class="col-md-3 col-md-offset-1">
 							<h2>Telefone</h2>
@@ -525,6 +528,7 @@
 								<br> 3720-232 Oliveira de Azeméis
 								<br> Portugal
 							</p>
+							<a href="#" title="Saiba como chegar">Saiba como chegar no googlemaps</a>
 						</div>
 						<div class="col-md-3 col-md-offset-1">
 							<h2>Telefone</h2>

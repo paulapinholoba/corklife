@@ -43,7 +43,7 @@
 
 </header>
 <?php include 'search.php' ?>
-	<div class="main-content">
+	<div class="main-content product-finder-content">
 		<!-- start -->
 		<section>
 			<div class="container-fluid coloured_bg--product-smaller">
@@ -96,15 +96,18 @@
 												</div>
 												<div class="swiper-slide__form form_line">
 													<strong>Que tipo de Visual procura?</strong>
+													<div class="clearfix"></div>
 													<div class="form_line--selection">
 														<div class="selection__item">
 															<input type="radio" name="radio-group" id="cortica">
 															<label for="cortica">cortica</label>
 														</div>
+														<div class="clearfix"></div>
 														<div class="selection__item">
 															<input type="radio" name="radio-group" id="madeira" checked="checked">
 															<label for="madeira">madeira</label>
 														</div>
+														<div class="clearfix"></div>
 														<div class="selection__item">
 															<input type="radio" name="radio-group" id="pedra" checked="checked">
 															<label for="pedra">pedra</label>
@@ -112,6 +115,7 @@
 													</div>
 													<a href="#" class="btn btn--lightGray">Continuar</a>
 												</div>
+												
 											</div>
 											<div class="swiper-slide">
 												<div class="swiper-slide__num">

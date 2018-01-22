@@ -1,0 +1,45 @@
+.terms {
+    margin: 96px 0;
+}
+
+.terms h2 {
+    @include Montserrat-Bold(14px, normal, $blue-light);
+    text-transform: uppercase;
+    margin: 45px 0 20px -20px;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        background-color: $blue-light;
+    }
+}
+
+.terms p {
+    @include Montserrat-Light(15px, 25px, $gray);
+    margin-bottom: 20px;
+}
+/* ******************************************************* mobile breakpoints */
+@include max-xs {
+    .topBanner h1 {
+        &:after {
+            top: 82%;
+        }
+    }
+    .terms {
+        margin: 48px 0;
+    }
+
+    .terms h2{
+        margin-left:0;
+    }
+}
+
+
+/* ******************************************************* other breakpoints */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .terms {
+        margin: 24px 0;
+    }
+}
